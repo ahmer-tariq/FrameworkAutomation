@@ -1,0 +1,1651 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite, 6 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-Suite" class="navigator-link">
+              <span class="suite-name border-failed">Suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-Suite" class="navigator-link ">
+                    <span>C:\Users\DELL\HybirdTestNGFramework\TimeLogger_Project\testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-Suite" class="navigator-link ">
+                    <span class="test-stats">3 tests</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-Suite" class="navigator-link ">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-Suite" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-Suite" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-Suite" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-Suite" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">44 methods, 6 failed,   38 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.Logintest" class="method navigator-link" hash-for-method="afterLoginAndLogoutGoBackVerifyTheLogoutSccessfull">afterLoginAndLogoutGoBackVerifyTheLogoutSccessfull</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.Logintest" class="method navigator-link" hash-for-method="checkCrossEyeIcon">checkCrossEyeIcon</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.Logintest" class="method navigator-link" hash-for-method="onlyInvalidAbnormalEmail">onlyInvalidAbnormalEmail</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.Logintest" class="method navigator-link" hash-for-method="onlyInvalidAbnormalEmail">onlyInvalidAbnormalEmail</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.Logintest" class="method navigator-link" hash-for-method="signInButton">signInButton</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.Logintest" class="method navigator-link" hash-for-method="signInButton">signInButton</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods passed suite-Suite"> (hide)</a> <!-- hide-methods passed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.Logintest" class="method navigator-link" hash-for-method="AbnormalEmailAndInvalidPassword">AbnormalEmailAndInvalidPassword</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.Logintest" class="method navigator-link" hash-for-method="AbnormalEmailAndInvalidPassword">AbnormalEmailAndInvalidPassword</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.Logintest" class="method navigator-link" hash-for-method="afterLoginAndLogoutGoBackVerifyTheLogoutSccessfull">afterLoginAndLogoutGoBackVerifyTheLogoutSccessfull</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.Logintest" class="method navigator-link" hash-for-method="bothFieldsEmpty">bothFieldsEmpty</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.Logintest" class="method navigator-link" hash-for-method="bothFieldsEmpty">bothFieldsEmpty</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.Logintest" class="method navigator-link" hash-for-method="checkCrossEyeIcon">checkCrossEyeIcon</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.Logintest" class="method navigator-link" hash-for-method="invalidEmailAndInvalidPassword(akhtar.sher@gmail.com, khalid.kabir)">invalidEmailAndInvalidPassword(akhtar.sher@gmail.com, khalid.kabir)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.Logintest" class="method navigator-link" hash-for-method="invalidEmailAndInvalidPassword(qaiser.anwar@gmail.com, shahid.iqbal)">invalidEmailAndInvalidPassword(qaiser.anwar@gmail.com, shahid.iqbal)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.Logintest" class="method navigator-link" hash-for-method="invalidEmailValidPassword">invalidEmailValidPassword</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.Logintest" class="method navigator-link" hash-for-method="invalidEmailValidPassword">invalidEmailValidPassword</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.Logintest" class="method navigator-link" hash-for-method="loginWithValidCredentialsAndBackwardAndForward">loginWithValidCredentialsAndBackwardAndForward</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.Logintest" class="method navigator-link" hash-for-method="loginWithValidCredentialsAndBackwardAndForward">loginWithValidCredentialsAndBackwardAndForward</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.Logintest" class="method navigator-link" hash-for-method="onlyValidEmail">onlyValidEmail</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.Logintest" class="method navigator-link" hash-for-method="onlyValidEmail">onlyValidEmail</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.Logintest" class="method navigator-link" hash-for-method="onlyValidPassword">onlyValidPassword</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.Logintest" class="method navigator-link" hash-for-method="onlyValidPassword">onlyValidPassword</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.Logintest" class="method navigator-link" hash-for-method="validCredentialsAndMoveToNewTab">validCredentialsAndMoveToNewTab</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.Logintest" class="method navigator-link" hash-for-method="validCredentialsAndMoveToNewTab">validCredentialsAndMoveToNewTab</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.Logintest" class="method navigator-link" hash-for-method="validCredentialsAndRefresh">validCredentialsAndRefresh</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.Logintest" class="method navigator-link" hash-for-method="validCredentialsAndRefresh">validCredentialsAndRefresh</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.Logintest" class="method navigator-link" hash-for-method="validEmailAndInvalidPassword">validEmailAndInvalidPassword</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.Logintest" class="method navigator-link" hash-for-method="validEmailAndInvalidPassword">validEmailAndInvalidPassword</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.Logintest" class="method navigator-link" hash-for-method="validEmailAndValidPassword">validEmailAndValidPassword</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.Logintest" class="method navigator-link" hash-for-method="validEmailAndValidPassword">validEmailAndValidPassword</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.Logintest" class="method navigator-link" hash-for-method="verifyLoginWithValidCredentialsMultipleTimes(basitbhutto333@gmail.com, Basit@12345)">verifyLoginWithValidCredentialsMultipleTimes(basitbhutto333@gmail.com, Basit@12345)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.Logintest" class="method navigator-link" hash-for-method="verifyLoginWithValidCredentialsMultipleTimes(basitbhutto333@gmail.com, Basit@12345)">verifyLoginWithValidCredentialsMultipleTimes(basitbhutto333@gmail.com, Basit@12345)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.Logintest" class="method navigator-link" hash-for-method="verifyLoginWithValidCredentialsMultipleTimes(usmanamin735@gmail.com, Usman@12345)">verifyLoginWithValidCredentialsMultipleTimes(usmanamin735@gmail.com, Usman@12345)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.Logintest" class="method navigator-link" hash-for-method="verifyLoginWithValidCredentialsMultipleTimes(basitbhutto333@gmail.com, Basit@12345)">verifyLoginWithValidCredentialsMultipleTimes(basitbhutto333@gmail.com, Basit@12345)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.Logintest" class="method navigator-link" hash-for-method="verifyLoginWithValidCredentialsMultipleTimes(usmanamin735@gmail.com, Usman@12345)">verifyLoginWithValidCredentialsMultipleTimes(usmanamin735@gmail.com, Usman@12345)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.Logintest" class="method navigator-link" hash-for-method="verifyLoginWithValidCredentialsMultipleTimes(basitbhutto333@gmail.com, Basit@12345)">verifyLoginWithValidCredentialsMultipleTimes(basitbhutto333@gmail.com, Basit@12345)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.Logintest" class="method navigator-link" hash-for-method="verifyLoginWithValidCredentialsMultipleTimes(usmanamin735@gmail.com, Usman@12345)">verifyLoginWithValidCredentialsMultipleTimes(usmanamin735@gmail.com, Usman@12345)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.Logintest" class="method navigator-link" hash-for-method="verifyLoginWithValidCredentialsMultipleTimes(basitbhutto333@gmail.com, Basit@12345)">verifyLoginWithValidCredentialsMultipleTimes(basitbhutto333@gmail.com, Basit@12345)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.Logintest" class="method navigator-link" hash-for-method="verifyLoginWithValidCredentialsMultipleTimes(basitbhutto333@gmail.com, Basit@12345)">verifyLoginWithValidCredentialsMultipleTimes(basitbhutto333@gmail.com, Basit@12345)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.Logintest" class="method navigator-link" hash-for-method="verifyLoginWithValidCredentialsMultipleTimes(basitbhutto333@gmail.com, Basit@12345)">verifyLoginWithValidCredentialsMultipleTimes(basitbhutto333@gmail.com, Basit@12345)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.Logintest" class="method navigator-link" hash-for-method="verifyLoginWithValidCredentialsMultipleTimes(usmanamin735@gmail.com, Usman@12345)">verifyLoginWithValidCredentialsMultipleTimes(usmanamin735@gmail.com, Usman@12345)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.Logintest" class="method navigator-link" hash-for-method="verifyLoginWithValidCredentialsMultipleTimes(basitbhutto333@gmail.com, Basit@12345)">verifyLoginWithValidCredentialsMultipleTimes(basitbhutto333@gmail.com, Basit@12345)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.Logintest" class="method navigator-link" hash-for-method="verifyURLBeforeAndAfterLogin">verifyURLBeforeAndAfterLogin</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.Logintest" class="method navigator-link" hash-for-method="verifyURLBeforeAndAfterLogin">verifyURLBeforeAndAfterLogin</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">testcases.Logintest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="afterLoginAndLogoutGoBackVerifyTheLogoutSccessfull">
+                  </a> <!-- afterLoginAndLogoutGoBackVerifyTheLogoutSccessfull -->
+                  <span class="method-name">afterLoginAndLogoutGoBackVerifyTheLogoutSccessfull</span>
+                  <div class="stack-trace">java.lang.AssertionError: null
+	at testcases.Logintest.afterLoginAndLogoutGoBackVerifyTheLogoutSccessfull(Logintest.java:159)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1589)
+... Removed 17 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkCrossEyeIcon">
+                  </a> <!-- checkCrossEyeIcon -->
+                  <span class="method-name">checkCrossEyeIcon</span>
+                  <div class="stack-trace">org.openqa.selenium.ElementNotInteractableException: Element &lt;img class=&quot;w-4&quot; src=&quot;images/PasswordCrossEye.svg&quot;&gt; could not be scrolled into view
+Build info: version: &apos;4.9.0&apos;, revision: &apos;d7057100a6&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.2&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [f650c3a8-dc25-4f7c-a51a-79057ffc4e6e, clickElement {id=ac49c0e1-a153-4b35-9f24-29a6f73bfdb8}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 113.0.2, moz:accessibilityChecks: false, moz:buildID: 20230522134052, moz:debuggerAddress: 127.0.0.1:4675, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 10696, moz:profile: C:\Users\DELL\AppData\Local..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:4675/devtool..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Element: [[FirefoxDriver: firefox on WINDOWS (f650c3a8-dc25-4f7c-a51a-79057ffc4e6e)] -&gt; xpath: //img[@src=&apos;images/PasswordCrossEye.svg&apos;]]
+Session ID: f650c3a8-dc25-4f7c-a51a-79057ffc4e6e
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+	at jdk.proxy2/jdk.proxy2.$Proxy20.click(Unknown Source)
+	at webpages.LoginPage.crossEyeIcon(LoginPage.java:98)
+	at testcases.Logintest.checkCrossEyeIcon(Logintest.java:99)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1589)
+... Removed 20 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="onlyInvalidAbnormalEmail">
+                  </a> <!-- onlyInvalidAbnormalEmail -->
+                  <span class="method-name">onlyInvalidAbnormalEmail</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//p[contains(text(),&apos;Please enter valid email&apos;)]&quot;}
+  (Session info: chrome=113.0.5672.127)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.9.0&apos;, revision: &apos;d7057100a6&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [326ceeaebd34444a960b1b88568f65e4, findElement {using=xpath, value=//p[contains(text(),&apos;Please enter valid email&apos;)]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.127, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\DELL\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:58740}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:58740/devtoo..., se:cdpVersion: 113.0.5672.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 326ceeaebd34444a960b1b88568f65e4
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy20.isDisplayed(Unknown Source)
+	at webpages.LoginPage.enterValidEmail(LoginPage.java:93)
+	at testcases.Logintest.onlyInvalidAbnormalEmail(Logintest.java:93)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1589)
+... Removed 18 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="onlyInvalidAbnormalEmail">
+                  </a> <!-- onlyInvalidAbnormalEmail -->
+                  <span class="method-name">onlyInvalidAbnormalEmail</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: Unable to locate element: //p[contains(text(),&apos;Please enter valid email&apos;)]
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.9.0&apos;, revision: &apos;d7057100a6&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.2&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [f9dad78a-8f66-4ddd-810e-fa7fcd124a94, findElement {using=xpath, value=//p[contains(text(),&apos;Please enter valid email&apos;)]}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 113.0.2, moz:accessibilityChecks: false, moz:buildID: 20230522134052, moz:debuggerAddress: 127.0.0.1:25009, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 5552, moz:profile: C:\Users\DELL\AppData\Local..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:25009/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: f9dad78a-8f66-4ddd-810e-fa7fcd124a94
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy20.isDisplayed(Unknown Source)
+	at webpages.LoginPage.enterValidEmail(LoginPage.java:93)
+	at testcases.Logintest.onlyInvalidAbnormalEmail(Logintest.java:93)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1589)
+... Removed 18 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="signInButton">
+                  </a> <!-- signInButton -->
+                  <span class="method-name">signInButton</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [false] but found [true]
+	at testcases.Logintest.signInButton(Logintest.java:114)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1589)
+... Removed 19 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="signInButton">
+                  </a> <!-- signInButton -->
+                  <span class="method-name">signInButton</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [false] but found [true]
+	at testcases.Logintest.signInButton(Logintest.java:114)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1589)
+... Removed 19 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testcases.Logintest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="AbnormalEmailAndInvalidPassword">
+                  </a> <!-- AbnormalEmailAndInvalidPassword -->
+                  <span class="method-name">AbnormalEmailAndInvalidPassword</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="AbnormalEmailAndInvalidPassword">
+                  </a> <!-- AbnormalEmailAndInvalidPassword -->
+                  <span class="method-name">AbnormalEmailAndInvalidPassword</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="afterLoginAndLogoutGoBackVerifyTheLogoutSccessfull">
+                  </a> <!-- afterLoginAndLogoutGoBackVerifyTheLogoutSccessfull -->
+                  <span class="method-name">afterLoginAndLogoutGoBackVerifyTheLogoutSccessfull</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="bothFieldsEmpty">
+                  </a> <!-- bothFieldsEmpty -->
+                  <span class="method-name">bothFieldsEmpty</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="bothFieldsEmpty">
+                  </a> <!-- bothFieldsEmpty -->
+                  <span class="method-name">bothFieldsEmpty</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkCrossEyeIcon">
+                  </a> <!-- checkCrossEyeIcon -->
+                  <span class="method-name">checkCrossEyeIcon</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="invalidEmailAndInvalidPassword(akhtar.sher@gmail.com, khalid.kabir)">
+                  </a> <!-- invalidEmailAndInvalidPassword(akhtar.sher@gmail.com, khalid.kabir) -->
+                  <span class="method-name">invalidEmailAndInvalidPassword</span>
+                  <span class="parameters">(akhtar.sher@gmail.com,khalid.kabir)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="invalidEmailAndInvalidPassword(qaiser.anwar@gmail.com, shahid.iqbal)">
+                  </a> <!-- invalidEmailAndInvalidPassword(qaiser.anwar@gmail.com, shahid.iqbal) -->
+                  <span class="method-name">invalidEmailAndInvalidPassword</span>
+                  <span class="parameters">(qaiser.anwar@gmail.com,shahid.iqbal)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="invalidEmailValidPassword">
+                  </a> <!-- invalidEmailValidPassword -->
+                  <span class="method-name">invalidEmailValidPassword</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="invalidEmailValidPassword">
+                  </a> <!-- invalidEmailValidPassword -->
+                  <span class="method-name">invalidEmailValidPassword</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginWithValidCredentialsAndBackwardAndForward">
+                  </a> <!-- loginWithValidCredentialsAndBackwardAndForward -->
+                  <span class="method-name">loginWithValidCredentialsAndBackwardAndForward</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginWithValidCredentialsAndBackwardAndForward">
+                  </a> <!-- loginWithValidCredentialsAndBackwardAndForward -->
+                  <span class="method-name">loginWithValidCredentialsAndBackwardAndForward</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="onlyValidEmail">
+                  </a> <!-- onlyValidEmail -->
+                  <span class="method-name">onlyValidEmail</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="onlyValidEmail">
+                  </a> <!-- onlyValidEmail -->
+                  <span class="method-name">onlyValidEmail</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="onlyValidPassword">
+                  </a> <!-- onlyValidPassword -->
+                  <span class="method-name">onlyValidPassword</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="onlyValidPassword">
+                  </a> <!-- onlyValidPassword -->
+                  <span class="method-name">onlyValidPassword</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validCredentialsAndMoveToNewTab">
+                  </a> <!-- validCredentialsAndMoveToNewTab -->
+                  <span class="method-name">validCredentialsAndMoveToNewTab</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validCredentialsAndMoveToNewTab">
+                  </a> <!-- validCredentialsAndMoveToNewTab -->
+                  <span class="method-name">validCredentialsAndMoveToNewTab</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validCredentialsAndRefresh">
+                  </a> <!-- validCredentialsAndRefresh -->
+                  <span class="method-name">validCredentialsAndRefresh</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validCredentialsAndRefresh">
+                  </a> <!-- validCredentialsAndRefresh -->
+                  <span class="method-name">validCredentialsAndRefresh</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validEmailAndInvalidPassword">
+                  </a> <!-- validEmailAndInvalidPassword -->
+                  <span class="method-name">validEmailAndInvalidPassword</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validEmailAndInvalidPassword">
+                  </a> <!-- validEmailAndInvalidPassword -->
+                  <span class="method-name">validEmailAndInvalidPassword</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validEmailAndValidPassword">
+                  </a> <!-- validEmailAndValidPassword -->
+                  <span class="method-name">validEmailAndValidPassword</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validEmailAndValidPassword">
+                  </a> <!-- validEmailAndValidPassword -->
+                  <span class="method-name">validEmailAndValidPassword</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyLoginWithValidCredentialsMultipleTimes(basitbhutto333@gmail.com, Basit@12345)">
+                  </a> <!-- verifyLoginWithValidCredentialsMultipleTimes(basitbhutto333@gmail.com, Basit@12345) -->
+                  <span class="method-name">verifyLoginWithValidCredentialsMultipleTimes</span>
+                  <span class="parameters">(basitbhutto333@gmail.com,Basit@12345)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyLoginWithValidCredentialsMultipleTimes(basitbhutto333@gmail.com, Basit@12345)">
+                  </a> <!-- verifyLoginWithValidCredentialsMultipleTimes(basitbhutto333@gmail.com, Basit@12345) -->
+                  <span class="method-name">verifyLoginWithValidCredentialsMultipleTimes</span>
+                  <span class="parameters">(basitbhutto333@gmail.com,Basit@12345)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyLoginWithValidCredentialsMultipleTimes(usmanamin735@gmail.com, Usman@12345)">
+                  </a> <!-- verifyLoginWithValidCredentialsMultipleTimes(usmanamin735@gmail.com, Usman@12345) -->
+                  <span class="method-name">verifyLoginWithValidCredentialsMultipleTimes</span>
+                  <span class="parameters">(usmanamin735@gmail.com,Usman@12345)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyLoginWithValidCredentialsMultipleTimes(basitbhutto333@gmail.com, Basit@12345)">
+                  </a> <!-- verifyLoginWithValidCredentialsMultipleTimes(basitbhutto333@gmail.com, Basit@12345) -->
+                  <span class="method-name">verifyLoginWithValidCredentialsMultipleTimes</span>
+                  <span class="parameters">(basitbhutto333@gmail.com,Basit@12345)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyLoginWithValidCredentialsMultipleTimes(usmanamin735@gmail.com, Usman@12345)">
+                  </a> <!-- verifyLoginWithValidCredentialsMultipleTimes(usmanamin735@gmail.com, Usman@12345) -->
+                  <span class="method-name">verifyLoginWithValidCredentialsMultipleTimes</span>
+                  <span class="parameters">(usmanamin735@gmail.com,Usman@12345)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyLoginWithValidCredentialsMultipleTimes(basitbhutto333@gmail.com, Basit@12345)">
+                  </a> <!-- verifyLoginWithValidCredentialsMultipleTimes(basitbhutto333@gmail.com, Basit@12345) -->
+                  <span class="method-name">verifyLoginWithValidCredentialsMultipleTimes</span>
+                  <span class="parameters">(basitbhutto333@gmail.com,Basit@12345)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyLoginWithValidCredentialsMultipleTimes(usmanamin735@gmail.com, Usman@12345)">
+                  </a> <!-- verifyLoginWithValidCredentialsMultipleTimes(usmanamin735@gmail.com, Usman@12345) -->
+                  <span class="method-name">verifyLoginWithValidCredentialsMultipleTimes</span>
+                  <span class="parameters">(usmanamin735@gmail.com,Usman@12345)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyLoginWithValidCredentialsMultipleTimes(basitbhutto333@gmail.com, Basit@12345)">
+                  </a> <!-- verifyLoginWithValidCredentialsMultipleTimes(basitbhutto333@gmail.com, Basit@12345) -->
+                  <span class="method-name">verifyLoginWithValidCredentialsMultipleTimes</span>
+                  <span class="parameters">(basitbhutto333@gmail.com,Basit@12345)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyLoginWithValidCredentialsMultipleTimes(basitbhutto333@gmail.com, Basit@12345)">
+                  </a> <!-- verifyLoginWithValidCredentialsMultipleTimes(basitbhutto333@gmail.com, Basit@12345) -->
+                  <span class="method-name">verifyLoginWithValidCredentialsMultipleTimes</span>
+                  <span class="parameters">(basitbhutto333@gmail.com,Basit@12345)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyLoginWithValidCredentialsMultipleTimes(basitbhutto333@gmail.com, Basit@12345)">
+                  </a> <!-- verifyLoginWithValidCredentialsMultipleTimes(basitbhutto333@gmail.com, Basit@12345) -->
+                  <span class="method-name">verifyLoginWithValidCredentialsMultipleTimes</span>
+                  <span class="parameters">(basitbhutto333@gmail.com,Basit@12345)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyLoginWithValidCredentialsMultipleTimes(usmanamin735@gmail.com, Usman@12345)">
+                  </a> <!-- verifyLoginWithValidCredentialsMultipleTimes(usmanamin735@gmail.com, Usman@12345) -->
+                  <span class="method-name">verifyLoginWithValidCredentialsMultipleTimes</span>
+                  <span class="parameters">(usmanamin735@gmail.com,Usman@12345)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyLoginWithValidCredentialsMultipleTimes(basitbhutto333@gmail.com, Basit@12345)">
+                  </a> <!-- verifyLoginWithValidCredentialsMultipleTimes(basitbhutto333@gmail.com, Basit@12345) -->
+                  <span class="method-name">verifyLoginWithValidCredentialsMultipleTimes</span>
+                  <span class="parameters">(basitbhutto333@gmail.com,Basit@12345)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyURLBeforeAndAfterLogin">
+                  </a> <!-- verifyURLBeforeAndAfterLogin -->
+                  <span class="method-name">verifyURLBeforeAndAfterLogin</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyURLBeforeAndAfterLogin">
+                  </a> <!-- verifyURLBeforeAndAfterLogin -->
+                  <span class="method-name">verifyURLBeforeAndAfterLogin</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+        </div> <!-- panel Suite -->
+        <div panel-name="test-xml-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\DELL\HybirdTestNGFramework\TimeLogger_Project\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite thread-count=&quot;2&quot; parallel=&quot;tests&quot; name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;listener.MyListener&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test thread-count=&quot;2&quot; parallel=&quot;tests&quot; name=&quot;Chrome Test&quot;&gt;
+    &lt;parameter name=&quot;Browser&quot; value=&quot;chrome&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;testcases.Logintest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Chrome Test --&gt;
+  &lt;test thread-count=&quot;2&quot; parallel=&quot;tests&quot; name=&quot;FireFox Test&quot;&gt;
+    &lt;parameter name=&quot;Browser&quot; value=&quot;firefox&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;testcases.Logintest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- FireFox Test --&gt;
+  &lt;test thread-count=&quot;2&quot; parallel=&quot;tests&quot; name=&quot;Edge Test&quot;&gt;
+    &lt;parameter name=&quot;Browser&quot; value=&quot;edge&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;testcases.Logintest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Edge Test --&gt;
+&lt;/suite&gt; &lt;!-- Suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Chrome Test (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">FireFox Test (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Edge Test (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Suite');
+function tableData_Suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(44);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'afterLoginAndLogoutGoBackVerifyTheLogoutSccessfull')
+data.setCell(0, 2, 'testcases.Logintest')
+data.setCell(0, 3, 25245);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'onlyInvalidAbnormalEmail')
+data.setCell(1, 2, 'testcases.Logintest')
+data.setCell(1, 3, 17750);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'onlyInvalidAbnormalEmail')
+data.setCell(2, 2, 'testcases.Logintest')
+data.setCell(2, 3, 17564);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'validEmailAndValidPassword')
+data.setCell(3, 2, 'testcases.Logintest')
+data.setCell(3, 3, 14835);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'afterLoginAndLogoutGoBackVerifyTheLogoutSccessfull')
+data.setCell(4, 2, 'testcases.Logintest')
+data.setCell(4, 3, 14506);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'checkCrossEyeIcon')
+data.setCell(5, 2, 'testcases.Logintest')
+data.setCell(5, 3, 14164);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'validCredentialsAndRefresh')
+data.setCell(6, 2, 'testcases.Logintest')
+data.setCell(6, 3, 13038);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'loginWithValidCredentialsAndBackwardAndForward')
+data.setCell(7, 2, 'testcases.Logintest')
+data.setCell(7, 3, 12915);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'validEmailAndInvalidPassword')
+data.setCell(8, 2, 'testcases.Logintest')
+data.setCell(8, 3, 12824);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'validCredentialsAndMoveToNewTab')
+data.setCell(9, 2, 'testcases.Logintest')
+data.setCell(9, 3, 12603);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'verifyLoginWithValidCredentialsMultipleTimes')
+data.setCell(10, 2, 'testcases.Logintest')
+data.setCell(10, 3, 12093);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'validCredentialsAndRefresh')
+data.setCell(11, 2, 'testcases.Logintest')
+data.setCell(11, 3, 12049);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'bothFieldsEmpty')
+data.setCell(12, 2, 'testcases.Logintest')
+data.setCell(12, 3, 11774);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'verifyLoginWithValidCredentialsMultipleTimes')
+data.setCell(13, 2, 'testcases.Logintest')
+data.setCell(13, 3, 11559);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'validCredentialsAndMoveToNewTab')
+data.setCell(14, 2, 'testcases.Logintest')
+data.setCell(14, 3, 11139);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'verifyLoginWithValidCredentialsMultipleTimes')
+data.setCell(15, 2, 'testcases.Logintest')
+data.setCell(15, 3, 10765);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'onlyValidEmail')
+data.setCell(16, 2, 'testcases.Logintest')
+data.setCell(16, 3, 10527);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'onlyValidPassword')
+data.setCell(17, 2, 'testcases.Logintest')
+data.setCell(17, 3, 9893);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'verifyLoginWithValidCredentialsMultipleTimes')
+data.setCell(18, 2, 'testcases.Logintest')
+data.setCell(18, 3, 9891);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'AbnormalEmailAndInvalidPassword')
+data.setCell(19, 2, 'testcases.Logintest')
+data.setCell(19, 3, 9357);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'verifyLoginWithValidCredentialsMultipleTimes')
+data.setCell(20, 2, 'testcases.Logintest')
+data.setCell(20, 3, 9266);
+data.setCell(21, 0, 21)
+data.setCell(21, 1, 'invalidEmailAndInvalidPassword')
+data.setCell(21, 2, 'testcases.Logintest')
+data.setCell(21, 3, 9109);
+data.setCell(22, 0, 22)
+data.setCell(22, 1, 'verifyLoginWithValidCredentialsMultipleTimes')
+data.setCell(22, 2, 'testcases.Logintest')
+data.setCell(22, 3, 8881);
+data.setCell(23, 0, 23)
+data.setCell(23, 1, 'invalidEmailAndInvalidPassword')
+data.setCell(23, 2, 'testcases.Logintest')
+data.setCell(23, 3, 8859);
+data.setCell(24, 0, 24)
+data.setCell(24, 1, 'verifyLoginWithValidCredentialsMultipleTimes')
+data.setCell(24, 2, 'testcases.Logintest')
+data.setCell(24, 3, 8829);
+data.setCell(25, 0, 25)
+data.setCell(25, 1, 'verifyLoginWithValidCredentialsMultipleTimes')
+data.setCell(25, 2, 'testcases.Logintest')
+data.setCell(25, 3, 8784);
+data.setCell(26, 0, 26)
+data.setCell(26, 1, 'verifyLoginWithValidCredentialsMultipleTimes')
+data.setCell(26, 2, 'testcases.Logintest')
+data.setCell(26, 3, 8780);
+data.setCell(27, 0, 27)
+data.setCell(27, 1, 'verifyLoginWithValidCredentialsMultipleTimes')
+data.setCell(27, 2, 'testcases.Logintest')
+data.setCell(27, 3, 8759);
+data.setCell(28, 0, 28)
+data.setCell(28, 1, 'verifyLoginWithValidCredentialsMultipleTimes')
+data.setCell(28, 2, 'testcases.Logintest')
+data.setCell(28, 3, 8597);
+data.setCell(29, 0, 29)
+data.setCell(29, 1, 'onlyValidEmail')
+data.setCell(29, 2, 'testcases.Logintest')
+data.setCell(29, 3, 8570);
+data.setCell(30, 0, 30)
+data.setCell(30, 1, 'AbnormalEmailAndInvalidPassword')
+data.setCell(30, 2, 'testcases.Logintest')
+data.setCell(30, 3, 8322);
+data.setCell(31, 0, 31)
+data.setCell(31, 1, 'invalidEmailValidPassword')
+data.setCell(31, 2, 'testcases.Logintest')
+data.setCell(31, 3, 8212);
+data.setCell(32, 0, 32)
+data.setCell(32, 1, 'validEmailAndInvalidPassword')
+data.setCell(32, 2, 'testcases.Logintest')
+data.setCell(32, 3, 8089);
+data.setCell(33, 0, 33)
+data.setCell(33, 1, 'verifyLoginWithValidCredentialsMultipleTimes')
+data.setCell(33, 2, 'testcases.Logintest')
+data.setCell(33, 3, 7687);
+data.setCell(34, 0, 34)
+data.setCell(34, 1, 'onlyValidPassword')
+data.setCell(34, 2, 'testcases.Logintest')
+data.setCell(34, 3, 6766);
+data.setCell(35, 0, 35)
+data.setCell(35, 1, 'validEmailAndValidPassword')
+data.setCell(35, 2, 'testcases.Logintest')
+data.setCell(35, 3, 6665);
+data.setCell(36, 0, 36)
+data.setCell(36, 1, 'invalidEmailValidPassword')
+data.setCell(36, 2, 'testcases.Logintest')
+data.setCell(36, 3, 6624);
+data.setCell(37, 0, 37)
+data.setCell(37, 1, 'loginWithValidCredentialsAndBackwardAndForward')
+data.setCell(37, 2, 'testcases.Logintest')
+data.setCell(37, 3, 5603);
+data.setCell(38, 0, 38)
+data.setCell(38, 1, 'bothFieldsEmpty')
+data.setCell(38, 2, 'testcases.Logintest')
+data.setCell(38, 3, 5379);
+data.setCell(39, 0, 39)
+data.setCell(39, 1, 'verifyURLBeforeAndAfterLogin')
+data.setCell(39, 2, 'testcases.Logintest')
+data.setCell(39, 3, 3331);
+data.setCell(40, 0, 40)
+data.setCell(40, 1, 'verifyURLBeforeAndAfterLogin')
+data.setCell(40, 2, 'testcases.Logintest')
+data.setCell(40, 3, 3131);
+data.setCell(41, 0, 41)
+data.setCell(41, 1, 'signInButton')
+data.setCell(41, 2, 'testcases.Logintest')
+data.setCell(41, 3, 1774);
+data.setCell(42, 0, 42)
+data.setCell(42, 1, 'checkCrossEyeIcon')
+data.setCell(42, 2, 'testcases.Logintest')
+data.setCell(42, 3, 1622);
+data.setCell(43, 0, 43)
+data.setCell(43, 1, 'signInButton')
+data.setCell(43, 2, 'testcases.Logintest')
+data.setCell(43, 3, 853);
+window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 11 minutes</span>
+              <div id="times-div-Suite">
+              </div> <!-- times-div-Suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcases.Logintest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">startup(chrome)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">startup(firefox)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validEmailAndValidPassword</span>
+                <span class="method-start">23236 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">validEmailAndValidPassword</span>
+                <span class="method-start">32188 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">38090 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">38859 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">startup(chrome)</span>
+                <span class="method-start">41505 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">startup(firefox)</span>
+                <span class="method-start">44369 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validEmailAndInvalidPassword</span>
+                <span class="method-start">49694 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">validEmailAndInvalidPassword</span>
+                <span class="method-start">61060 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">62523 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">startup(chrome)</span>
+                <span class="method-start">64037 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">69155 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">invalidEmailValidPassword</span>
+                <span class="method-start">71568 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">startup(firefox)</span>
+                <span class="method-start">72088 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">79787 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">startup(chrome)</span>
+                <span class="method-start">82115 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">invalidEmailValidPassword</span>
+                <span class="method-start">87105 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">invalidEmailAndInvalidPassword(akhtar.sher@gmail.com, khalid.kabir)</span>
+                <span class="method-start">90201 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">93735 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">startup(firefox)</span>
+                <span class="method-start">98062 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">99063 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">startup(chrome)</span>
+                <span class="method-start">104609 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">onlyValidEmail</span>
+                <span class="method-start">117058 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">invalidEmailAndInvalidPassword(qaiser.anwar@gmail.com, shahid.iqbal)</span>
+                <span class="method-start">117513 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">126634 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">127588 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">startup(firefox)</span>
+                <span class="method-start">133394 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">startup(chrome)</span>
+                <span class="method-start">134484 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">onlyValidPassword</span>
+                <span class="method-start">144896 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">onlyValidEmail</span>
+                <span class="method-start">152648 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">154844 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">startup(chrome)</span>
+                <span class="method-start">157984 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">161221 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">startup(firefox)</span>
+                <span class="method-start">164471 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">onlyInvalidAbnormalEmail</span>
+                <span class="method-start">165458 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">onlyValidPassword</span>
+                <span class="method-start">177688 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">184155 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">184464 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">startup(chrome)</span>
+                <span class="method-start">187002 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">startup(firefox)</span>
+                <span class="method-start">189706 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">checkCrossEyeIcon</span>
+                <span class="method-start">194810 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">onlyInvalidAbnormalEmail</span>
+                <span class="method-start">204747 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">208980 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">startup(chrome)</span>
+                <span class="method-start">209464 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">bothFieldsEmpty</span>
+                <span class="method-start">216969 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">222355 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">223114 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">startup(chrome)</span>
+                <span class="method-start">225133 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">startup(firefox)</span>
+                <span class="method-start">229060 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">signInButton</span>
+                <span class="method-start">231836 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">235855 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">startup(chrome)</span>
+                <span class="method-start">236463 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">AbnormalEmailAndInvalidPassword</span>
+                <span class="method-start">243582 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">checkCrossEyeIcon</span>
+                <span class="method-start">243809 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">245852 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">startup(firefox)</span>
+                <span class="method-start">249316 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">252944 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">startup(chrome)</span>
+                <span class="method-start">259583 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">bothFieldsEmpty</span>
+                <span class="method-start">264145 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">275925 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">validCredentialsAndRefresh</span>
+                <span class="method-start">276453 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">startup(firefox)</span>
+                <span class="method-start">280492 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">289525 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">startup(chrome)</span>
+                <span class="method-start">290181 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">signInButton</span>
+                <span class="method-start">295555 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">297750 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">validCredentialsAndMoveToNewTab</span>
+                <span class="method-start">297796 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">startup(firefox)</span>
+                <span class="method-start">301784 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">308937 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">startup(chrome)</span>
+                <span class="method-start">309413 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">afterLoginAndLogoutGoBackVerifyTheLogoutSccessfull</span>
+                <span class="method-start">315623 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">AbnormalEmailAndInvalidPassword</span>
+                <span class="method-start">316025 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">324350 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">startup(firefox)</span>
+                <span class="method-start">327020 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validCredentialsAndRefresh</span>
+                <span class="method-start">338168 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">341439 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">startup(chrome)</span>
+                <span class="method-start">343158 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyURLBeforeAndAfterLogin</span>
+                <span class="method-start">349884 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">350232 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">353218 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">startup(firefox)</span>
+                <span class="method-start">354751 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">startup(chrome)</span>
+                <span class="method-start">357666 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyLoginWithValidCredentialsMultipleTimes(basitbhutto333@gmail.com, Basit@12345)</span>
+                <span class="method-start">366513 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">validCredentialsAndMoveToNewTab</span>
+                <span class="method-start">370822 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">377282 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">startup(chrome)</span>
+                <span class="method-start">378000 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">383428 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">verifyLoginWithValidCredentialsMultipleTimes(usmanamin735@gmail.com, Usman@12345)</span>
+                <span class="method-start">385178 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">startup(firefox)</span>
+                <span class="method-start">387793 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">393777 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">startup(chrome)</span>
+                <span class="method-start">394352 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">afterLoginAndLogoutGoBackVerifyTheLogoutSccessfull</span>
+                <span class="method-start">401002 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyLoginWithValidCredentialsMultipleTimes(usmanamin735@gmail.com, Usman@12345)</span>
+                <span class="method-start">401507 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">410295 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">startup(chrome)</span>
+                <span class="method-start">411196 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">415622 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">verifyLoginWithValidCredentialsMultipleTimes(basitbhutto333@gmail.com, Basit@12345)</span>
+                <span class="method-start">418064 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">startup(firefox)</span>
+                <span class="method-start">418573 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">425760 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">startup(chrome)</span>
+                <span class="method-start">426381 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyURLBeforeAndAfterLogin</span>
+                <span class="method-start">433895 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyLoginWithValidCredentialsMultipleTimes(basitbhutto333@gmail.com, Basit@12345)</span>
+                <span class="method-start">435211 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">437028 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">startup(firefox)</span>
+                <span class="method-start">441425 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">444042 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">startup(chrome)</span>
+                <span class="method-start">447532 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyLoginWithValidCredentialsMultipleTimes(basitbhutto333@gmail.com, Basit@12345)</span>
+                <span class="method-start">454592 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyLoginWithValidCredentialsMultipleTimes(basitbhutto333@gmail.com, Basit@12345)</span>
+                <span class="method-start">456164 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">464488 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">464955 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">startup(chrome)</span>
+                <span class="method-start">468205 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">startup(firefox)</span>
+                <span class="method-start">470110 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">loginWithValidCredentialsAndBackwardAndForward</span>
+                <span class="method-start">476257 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">489176 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">verifyLoginWithValidCredentialsMultipleTimes(usmanamin735@gmail.com, Usman@12345)</span>
+                <span class="method-start">489518 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">startup(edge)</span>
+                <span class="method-start">496753 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">498787 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">startup(firefox)</span>
+                <span class="method-start">510210 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validEmailAndValidPassword</span>
+                <span class="method-start">531560 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyLoginWithValidCredentialsMultipleTimes(usmanamin735@gmail.com, Usman@12345)</span>
+                <span class="method-start">544189 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">556296 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">tearDown</span>
+                <span class="method-start">559295 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">startup(firefox)</span>
+                <span class="method-start">562237 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyLoginWithValidCredentialsMultipleTimes(basitbhutto333@gmail.com, Basit@12345)</span>
+                <span class="method-start">577028 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">startup</span>
+                <span class="method-start">581656 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validEmailAndInvalidPassword</span>
+                <span class="method-start">581693 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">585915 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">startup(firefox)</span>
+                <span class="method-start">593992 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyLoginWithValidCredentialsMultipleTimes(basitbhutto333@gmail.com, Basit@12345)</span>
+                <span class="method-start">608645 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">620211 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">startup(firefox)</span>
+                <span class="method-start">626451 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyLoginWithValidCredentialsMultipleTimes(basitbhutto333@gmail.com, Basit@12345)</span>
+                <span class="method-start">638714 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">647480 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">startup(firefox)</span>
+                <span class="method-start">651251 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">loginWithValidCredentialsAndBackwardAndForward</span>
+                <span class="method-start">663650 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">669259 ms</span>
+              </div> <!-- configuration-method after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>
