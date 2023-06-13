@@ -5,9 +5,25 @@
     <classes>
       <class name="testcases.Logintest">
         <methods>
+          <include name="validEmailAndValidPassword"/>
+          <include name="afterLoginAndLogoutGoBackVerifyTheLogoutSccessfull"/>
+          <include name="signInButton"/>
+          <include name="checkCrossEyeIcon"/>
           <include name="tearDown"/>
+          <include name="onlyValidPassword"/>
+          <include name="validCredentialsAndMoveToNewTab"/>
+          <include name="onlyValidEmail"/>
           <include name="verifyURLBeforeAndAfterLogin"/>
+          <include name="loginWithValidCredentialsAndBackwardAndForward"/>
+          <include name="invalidEmailAndInvalidPassword"/>
+          <include name="validEmailAndInvalidPassword"/>
+          <include name="validCredentialsAndRefresh"/>
+          <include name="AbnormalEmailAndInvalidPassword"/>
+          <include name="verifyLoginWithValidCredentialsMultipleTimes"/>
+          <include name="onlyInvalidAbnormalEmail"/>
           <include name="startup"/>
+          <include name="invalidEmailValidPassword"/>
+          <include name="bothFieldsEmpty"/>
         </methods>
       </class> <!-- testcases.Logintest -->
     </classes>

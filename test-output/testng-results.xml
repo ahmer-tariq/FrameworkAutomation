@@ -1,195 +1,475 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="44" passed="38" failed="6" skipped="0">
+<testng-results ignored="0" total="17" passed="0" failed="1" skipped="16">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-06-01T19:47:43 PKT" name="Suite" finished-at="2023-06-01T19:58:58 PKT" duration-ms="675358">
+  <suite started-at="2023-06-13T20:46:44 PKT" name="Default suite" finished-at="2023-06-13T20:46:58 PKT" duration-ms="13721">
     <groups>
     </groups>
-    <test started-at="2023-06-01T19:47:43 PKT" name="Chrome Test" finished-at="2023-06-01T19:55:54 PKT" duration-ms="490938">
+    <test started-at="2023-06-13T20:46:44 PKT" name="Default test" finished-at="2023-06-13T20:46:58 PKT" duration-ms="13721">
       <class name="testcases.Logintest">
-        <test-method is-config="true" signature="startup(java.lang.String)[pri:0, instance:testcases.Logintest@7b98f307]" started-at="2023-06-01T19:47:44 PKT" name="startup" finished-at="2023-06-01T19:48:07 PKT" duration-ms="23231" status="PASS">
+        <test-method is-config="true" signature="startup(java.lang.String)[pri:0, instance:testcases.Logintest@30c15d8b]" started-at="2023-06-13T20:46:44 PKT" name="startup" finished-at="2023-06-13T20:46:57 PKT" duration-ms="12656" status="FAIL">
           <params>
             <param index="0">
               <value>
-                <![CDATA[chrome]]>
+                <![CDATA[edge]]>
               </value>
             </param>
           </params>
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[null value in entry: url=null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: null value in entry: url=null
+at com.google.common.collect.CollectPreconditions.checkEntryNotNull(CollectPreconditions.java:33)
+at com.google.common.collect.SingletonImmutableBiMap.<init>(SingletonImmutableBiMap.java:43)
+at com.google.common.collect.ImmutableBiMap.of(ImmutableBiMap.java:81)
+at com.google.common.collect.ImmutableMap.of(ImmutableMap.java:128)
+at org.openqa.selenium.remote.DriverCommand.GET(DriverCommand.java:187)
+at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:297)
+at base.Base.launchApplication(Base.java:46)
+at testcases.Logintest.startup(Logintest.java:26)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:823)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:590)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startup -->
-        <test-method signature="validEmailAndValidPassword()[pri:1, instance:testcases.Logintest@7b98f307]" started-at="2023-06-01T19:48:07 PKT" name="validEmailAndValidPassword" finished-at="2023-06-01T19:48:22 PKT" duration-ms="14835" status="PASS">
+        <test-method signature="validEmailAndValidPassword()[pri:1, instance:testcases.Logintest@30c15d8b]" started-at="2023-06-13T20:46:57 PKT" name="validEmailAndValidPassword" finished-at="2023-06-13T20:46:57 PKT" duration-ms="1" status="SKIP">
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[null value in entry: url=null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: null value in entry: url=null
+at com.google.common.collect.CollectPreconditions.checkEntryNotNull(CollectPreconditions.java:33)
+at com.google.common.collect.SingletonImmutableBiMap.<init>(SingletonImmutableBiMap.java:43)
+at com.google.common.collect.ImmutableBiMap.of(ImmutableBiMap.java:81)
+at com.google.common.collect.ImmutableMap.of(ImmutableMap.java:128)
+at org.openqa.selenium.remote.DriverCommand.GET(DriverCommand.java:187)
+at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:297)
+at base.Base.launchApplication(Base.java:46)
+at testcases.Logintest.startup(Logintest.java:26)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:823)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:590)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validEmailAndValidPassword -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.Logintest@7b98f307]" started-at="2023-06-01T19:48:22 PKT" name="tearDown" finished-at="2023-06-01T19:48:25 PKT" duration-ms="3404" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.Logintest@30c15d8b]" started-at="2023-06-13T20:46:57 PKT" name="tearDown" finished-at="2023-06-13T20:46:57 PKT" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="startup(java.lang.String)[pri:0, instance:testcases.Logintest@7b98f307]" started-at="2023-06-01T19:48:25 PKT" name="startup" finished-at="2023-06-01T19:48:33 PKT" duration-ms="8189" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
+        <test-method is-config="true" signature="startup(java.lang.String)[pri:0, instance:testcases.Logintest@30c15d8b]" started-at="2023-06-13T20:46:57 PKT" name="startup" finished-at="2023-06-13T20:46:57 PKT" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startup -->
-        <test-method signature="validEmailAndInvalidPassword()[pri:2, instance:testcases.Logintest@7b98f307]" started-at="2023-06-01T19:48:33 PKT" name="validEmailAndInvalidPassword" finished-at="2023-06-01T19:48:46 PKT" duration-ms="12824" status="PASS">
+        <test-method signature="validEmailAndInvalidPassword()[pri:2, instance:testcases.Logintest@30c15d8b]" started-at="2023-06-13T20:46:57 PKT" name="validEmailAndInvalidPassword" finished-at="2023-06-13T20:46:57 PKT" duration-ms="0" status="SKIP">
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[null value in entry: url=null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: null value in entry: url=null
+at com.google.common.collect.CollectPreconditions.checkEntryNotNull(CollectPreconditions.java:33)
+at com.google.common.collect.SingletonImmutableBiMap.<init>(SingletonImmutableBiMap.java:43)
+at com.google.common.collect.ImmutableBiMap.of(ImmutableBiMap.java:81)
+at com.google.common.collect.ImmutableMap.of(ImmutableMap.java:128)
+at org.openqa.selenium.remote.DriverCommand.GET(DriverCommand.java:187)
+at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:297)
+at base.Base.launchApplication(Base.java:46)
+at testcases.Logintest.startup(Logintest.java:26)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:823)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:590)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validEmailAndInvalidPassword -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.Logintest@7b98f307]" started-at="2023-06-01T19:48:46 PKT" name="tearDown" finished-at="2023-06-01T19:48:48 PKT" duration-ms="1513" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.Logintest@30c15d8b]" started-at="2023-06-13T20:46:57 PKT" name="tearDown" finished-at="2023-06-13T20:46:57 PKT" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="startup(java.lang.String)[pri:0, instance:testcases.Logintest@7b98f307]" started-at="2023-06-01T19:48:48 PKT" name="startup" finished-at="2023-06-01T19:48:55 PKT" duration-ms="7531" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
+        <test-method is-config="true" signature="startup(java.lang.String)[pri:0, instance:testcases.Logintest@30c15d8b]" started-at="2023-06-13T20:46:57 PKT" name="startup" finished-at="2023-06-13T20:46:57 PKT" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startup -->
-        <test-method signature="invalidEmailValidPassword()[pri:3, instance:testcases.Logintest@7b98f307]" started-at="2023-06-01T19:48:55 PKT" name="invalidEmailValidPassword" finished-at="2023-06-01T19:49:03 PKT" duration-ms="8212" status="PASS">
+        <test-method signature="invalidEmailValidPassword()[pri:3, instance:testcases.Logintest@30c15d8b]" started-at="2023-06-13T20:46:57 PKT" name="invalidEmailValidPassword" finished-at="2023-06-13T20:46:57 PKT" duration-ms="0" status="SKIP">
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[null value in entry: url=null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: null value in entry: url=null
+at com.google.common.collect.CollectPreconditions.checkEntryNotNull(CollectPreconditions.java:33)
+at com.google.common.collect.SingletonImmutableBiMap.<init>(SingletonImmutableBiMap.java:43)
+at com.google.common.collect.ImmutableBiMap.of(ImmutableBiMap.java:81)
+at com.google.common.collect.ImmutableMap.of(ImmutableMap.java:128)
+at org.openqa.selenium.remote.DriverCommand.GET(DriverCommand.java:187)
+at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:297)
+at base.Base.launchApplication(Base.java:46)
+at testcases.Logintest.startup(Logintest.java:26)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:823)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:590)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- invalidEmailValidPassword -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.Logintest@7b98f307]" started-at="2023-06-01T19:49:03 PKT" name="tearDown" finished-at="2023-06-01T19:49:05 PKT" duration-ms="1628" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.Logintest@30c15d8b]" started-at="2023-06-13T20:46:57 PKT" name="tearDown" finished-at="2023-06-13T20:46:57 PKT" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="startup(java.lang.String)[pri:0, instance:testcases.Logintest@7b98f307]" started-at="2023-06-01T19:49:06 PKT" name="startup" finished-at="2023-06-01T19:49:14 PKT" duration-ms="8086" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
+        <test-method is-config="true" signature="startup(java.lang.String)[pri:0, instance:testcases.Logintest@30c15d8b]" started-at="2023-06-13T20:46:58 PKT" name="startup" finished-at="2023-06-13T20:46:58 PKT" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startup -->
-        <test-method signature="invalidEmailAndInvalidPassword(java.lang.String,java.lang.String)[pri:4, instance:testcases.Logintest@7b98f307]" started-at="2023-06-01T19:49:14 PKT" name="invalidEmailAndInvalidPassword" data-provider="Invaliddata" finished-at="2023-06-01T19:49:23 PKT" duration-ms="8859" status="PASS">
+        <test-method signature="invalidEmailAndInvalidPassword(java.lang.String,java.lang.String)[pri:4, instance:testcases.Logintest@30c15d8b]" started-at="2023-06-13T20:46:58 PKT" name="invalidEmailAndInvalidPassword" data-provider="Invaliddata" finished-at="2023-06-13T20:46:58 PKT" duration-ms="0" status="SKIP">
           <params>
             <param index="0">
               <value>
-                <![CDATA[akhtar.sher@gmail.com]]>
+                <![CDATA[younas.ahaqansari@gmail.com]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[khalid.kabir]]>
+                <![CDATA[aqeel.kabir]]>
               </value>
             </param>
           </params>
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[null value in entry: url=null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: null value in entry: url=null
+at com.google.common.collect.CollectPreconditions.checkEntryNotNull(CollectPreconditions.java:33)
+at com.google.common.collect.SingletonImmutableBiMap.<init>(SingletonImmutableBiMap.java:43)
+at com.google.common.collect.ImmutableBiMap.of(ImmutableBiMap.java:81)
+at com.google.common.collect.ImmutableMap.of(ImmutableMap.java:128)
+at org.openqa.selenium.remote.DriverCommand.GET(DriverCommand.java:187)
+at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:297)
+at base.Base.launchApplication(Base.java:46)
+at testcases.Logintest.startup(Logintest.java:26)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:823)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:590)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- invalidEmailAndInvalidPassword -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.Logintest@7b98f307]" started-at="2023-06-01T19:49:23 PKT" name="tearDown" finished-at="2023-06-01T19:49:28 PKT" duration-ms="5544" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.Logintest@30c15d8b]" started-at="2023-06-13T20:46:58 PKT" name="tearDown" finished-at="2023-06-13T20:46:58 PKT" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="startup(java.lang.String)[pri:0, instance:testcases.Logintest@7b98f307]" started-at="2023-06-01T19:49:28 PKT" name="startup" finished-at="2023-06-01T19:49:41 PKT" duration-ms="12449" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
+        <test-method is-config="true" signature="startup(java.lang.String)[pri:0, instance:testcases.Logintest@30c15d8b]" started-at="2023-06-13T20:46:58 PKT" name="startup" finished-at="2023-06-13T20:46:58 PKT" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startup -->
-        <test-method signature="onlyValidEmail()[pri:5, instance:testcases.Logintest@7b98f307]" started-at="2023-06-01T19:49:41 PKT" name="onlyValidEmail" finished-at="2023-06-01T19:49:51 PKT" duration-ms="10527" status="PASS">
+        <test-method signature="onlyValidEmail()[pri:5, instance:testcases.Logintest@30c15d8b]" started-at="2023-06-13T20:46:58 PKT" name="onlyValidEmail" finished-at="2023-06-13T20:46:58 PKT" duration-ms="0" status="SKIP">
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[null value in entry: url=null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: null value in entry: url=null
+at com.google.common.collect.CollectPreconditions.checkEntryNotNull(CollectPreconditions.java:33)
+at com.google.common.collect.SingletonImmutableBiMap.<init>(SingletonImmutableBiMap.java:43)
+at com.google.common.collect.ImmutableBiMap.of(ImmutableBiMap.java:81)
+at com.google.common.collect.ImmutableMap.of(ImmutableMap.java:128)
+at org.openqa.selenium.remote.DriverCommand.GET(DriverCommand.java:187)
+at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:297)
+at base.Base.launchApplication(Base.java:46)
+at testcases.Logintest.startup(Logintest.java:26)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:823)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:590)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- onlyValidEmail -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.Logintest@7b98f307]" started-at="2023-06-01T19:49:51 PKT" name="tearDown" finished-at="2023-06-01T19:49:58 PKT" duration-ms="6895" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.Logintest@30c15d8b]" started-at="2023-06-13T20:46:58 PKT" name="tearDown" finished-at="2023-06-13T20:46:58 PKT" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="startup(java.lang.String)[pri:0, instance:testcases.Logintest@7b98f307]" started-at="2023-06-01T19:49:58 PKT" name="startup" finished-at="2023-06-01T19:50:09 PKT" duration-ms="10412" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
+        <test-method is-config="true" signature="startup(java.lang.String)[pri:0, instance:testcases.Logintest@30c15d8b]" started-at="2023-06-13T20:46:58 PKT" name="startup" finished-at="2023-06-13T20:46:58 PKT" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startup -->
-        <test-method signature="onlyValidPassword()[pri:6, instance:testcases.Logintest@7b98f307]" started-at="2023-06-01T19:50:09 PKT" name="onlyValidPassword" finished-at="2023-06-01T19:50:18 PKT" duration-ms="9893" status="PASS">
+        <test-method signature="onlyValidPassword()[pri:6, instance:testcases.Logintest@30c15d8b]" started-at="2023-06-13T20:46:58 PKT" name="onlyValidPassword" finished-at="2023-06-13T20:46:58 PKT" duration-ms="0" status="SKIP">
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[null value in entry: url=null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: null value in entry: url=null
+at com.google.common.collect.CollectPreconditions.checkEntryNotNull(CollectPreconditions.java:33)
+at com.google.common.collect.SingletonImmutableBiMap.<init>(SingletonImmutableBiMap.java:43)
+at com.google.common.collect.ImmutableBiMap.of(ImmutableBiMap.java:81)
+at com.google.common.collect.ImmutableMap.of(ImmutableMap.java:128)
+at org.openqa.selenium.remote.DriverCommand.GET(DriverCommand.java:187)
+at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:297)
+at base.Base.launchApplication(Base.java:46)
+at testcases.Logintest.startup(Logintest.java:26)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:823)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:590)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- onlyValidPassword -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.Logintest@7b98f307]" started-at="2023-06-01T19:50:18 PKT" name="tearDown" finished-at="2023-06-01T19:50:22 PKT" duration-ms="3138" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.Logintest@30c15d8b]" started-at="2023-06-13T20:46:58 PKT" name="tearDown" finished-at="2023-06-13T20:46:58 PKT" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="startup(java.lang.String)[pri:0, instance:testcases.Logintest@7b98f307]" started-at="2023-06-01T19:50:22 PKT" name="startup" finished-at="2023-06-01T19:50:29 PKT" duration-ms="7473" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
+        <test-method is-config="true" signature="startup(java.lang.String)[pri:0, instance:testcases.Logintest@30c15d8b]" started-at="2023-06-13T20:46:58 PKT" name="startup" finished-at="2023-06-13T20:46:58 PKT" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startup -->
-        <test-method signature="onlyInvalidAbnormalEmail()[pri:7, instance:testcases.Logintest@7b98f307]" started-at="2023-06-01T19:50:29 PKT" name="onlyInvalidAbnormalEmail" finished-at="2023-06-01T19:50:47 PKT" duration-ms="17564" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchElementException">
+        <test-method signature="onlyInvalidAbnormalEmail()[pri:7, instance:testcases.Logintest@30c15d8b]" started-at="2023-06-13T20:46:58 PKT" name="onlyInvalidAbnormalEmail" finished-at="2023-06-13T20:46:58 PKT" duration-ms="0" status="SKIP">
+          <exception class="java.lang.NullPointerException">
             <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//p[contains(text(),'Please enter valid email')]"}
-  (Session info: chrome=113.0.5672.127)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: '4.9.0', revision: 'd7057100a6'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [326ceeaebd34444a960b1b88568f65e4, findElement {using=xpath, value=//p[contains(text(),'Please enter valid email')]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.127, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\DELL\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:58740}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:58740/devtoo..., se:cdpVersion: 113.0.5672.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 326ceeaebd34444a960b1b88568f65e4]]>
+              <![CDATA[null value in entry: url=null]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//p[contains(text(),'Please enter valid email')]"}
-  (Session info: chrome=113.0.5672.127)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: '4.9.0', revision: 'd7057100a6'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [326ceeaebd34444a960b1b88568f65e4, findElement {using=xpath, value=//p[contains(text(),'Please enter valid email')]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.127, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\DELL\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:58740}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:58740/devtoo..., se:cdpVersion: 113.0.5672.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 326ceeaebd34444a960b1b88568f65e4
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-at jdk.proxy2/jdk.proxy2.$Proxy20.isDisplayed(Unknown Source)
-at webpages.LoginPage.enterValidEmail(LoginPage.java:93)
-at testcases.Logintest.onlyInvalidAbnormalEmail(Logintest.java:93)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+              <![CDATA[java.lang.NullPointerException: null value in entry: url=null
+at com.google.common.collect.CollectPreconditions.checkEntryNotNull(CollectPreconditions.java:33)
+at com.google.common.collect.SingletonImmutableBiMap.<init>(SingletonImmutableBiMap.java:43)
+at com.google.common.collect.ImmutableBiMap.of(ImmutableBiMap.java:81)
+at com.google.common.collect.ImmutableMap.of(ImmutableMap.java:128)
+at org.openqa.selenium.remote.DriverCommand.GET(DriverCommand.java:187)
+at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:297)
+at base.Base.launchApplication(Base.java:46)
+at testcases.Logintest.startup(Logintest.java:26)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:823)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:590)
 at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
 at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
 at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
@@ -200,87 +480,179 @@ at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 at org.testng.TestRunner.privateRun(TestRunner.java:829)
 at org.testng.TestRunner.run(TestRunner.java:602)
 at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-at java.base/java.lang.Thread.run(Thread.java:1589)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- onlyInvalidAbnormalEmail -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.Logintest@7b98f307]" started-at="2023-06-01T19:50:48 PKT" name="tearDown" finished-at="2023-06-01T19:50:51 PKT" duration-ms="2846" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.Logintest@30c15d8b]" started-at="2023-06-13T20:46:58 PKT" name="tearDown" finished-at="2023-06-13T20:46:58 PKT" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="startup(java.lang.String)[pri:0, instance:testcases.Logintest@7b98f307]" started-at="2023-06-01T19:50:51 PKT" name="startup" finished-at="2023-06-01T19:50:58 PKT" duration-ms="7807" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
+        <test-method is-config="true" signature="startup(java.lang.String)[pri:0, instance:testcases.Logintest@30c15d8b]" started-at="2023-06-13T20:46:58 PKT" name="startup" finished-at="2023-06-13T20:46:58 PKT" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startup -->
-        <test-method signature="checkCrossEyeIcon()[pri:8, instance:testcases.Logintest@7b98f307]" started-at="2023-06-01T19:50:58 PKT" name="checkCrossEyeIcon" finished-at="2023-06-01T19:51:13 PKT" duration-ms="14164" status="PASS">
+        <test-method signature="checkCrossEyeIcon()[pri:8, instance:testcases.Logintest@30c15d8b]" started-at="2023-06-13T20:46:58 PKT" name="checkCrossEyeIcon" finished-at="2023-06-13T20:46:58 PKT" duration-ms="0" status="SKIP">
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[null value in entry: url=null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: null value in entry: url=null
+at com.google.common.collect.CollectPreconditions.checkEntryNotNull(CollectPreconditions.java:33)
+at com.google.common.collect.SingletonImmutableBiMap.<init>(SingletonImmutableBiMap.java:43)
+at com.google.common.collect.ImmutableBiMap.of(ImmutableBiMap.java:81)
+at com.google.common.collect.ImmutableMap.of(ImmutableMap.java:128)
+at org.openqa.selenium.remote.DriverCommand.GET(DriverCommand.java:187)
+at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:297)
+at base.Base.launchApplication(Base.java:46)
+at testcases.Logintest.startup(Logintest.java:26)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:823)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:590)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkCrossEyeIcon -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.Logintest@7b98f307]" started-at="2023-06-01T19:51:13 PKT" name="tearDown" finished-at="2023-06-01T19:51:13 PKT" duration-ms="482" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.Logintest@30c15d8b]" started-at="2023-06-13T20:46:58 PKT" name="tearDown" finished-at="2023-06-13T20:46:58 PKT" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="startup(java.lang.String)[pri:0, instance:testcases.Logintest@7b98f307]" started-at="2023-06-01T19:51:13 PKT" name="startup" finished-at="2023-06-01T19:51:21 PKT" duration-ms="7505" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
+        <test-method is-config="true" signature="startup(java.lang.String)[pri:0, instance:testcases.Logintest@30c15d8b]" started-at="2023-06-13T20:46:58 PKT" name="startup" finished-at="2023-06-13T20:46:58 PKT" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startup -->
-        <test-method signature="bothFieldsEmpty()[pri:9, instance:testcases.Logintest@7b98f307]" started-at="2023-06-01T19:51:21 PKT" name="bothFieldsEmpty" finished-at="2023-06-01T19:51:26 PKT" duration-ms="5379" status="PASS">
+        <test-method signature="bothFieldsEmpty()[pri:9, instance:testcases.Logintest@30c15d8b]" started-at="2023-06-13T20:46:58 PKT" name="bothFieldsEmpty" finished-at="2023-06-13T20:46:58 PKT" duration-ms="0" status="SKIP">
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[null value in entry: url=null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: null value in entry: url=null
+at com.google.common.collect.CollectPreconditions.checkEntryNotNull(CollectPreconditions.java:33)
+at com.google.common.collect.SingletonImmutableBiMap.<init>(SingletonImmutableBiMap.java:43)
+at com.google.common.collect.ImmutableBiMap.of(ImmutableBiMap.java:81)
+at com.google.common.collect.ImmutableMap.of(ImmutableMap.java:128)
+at org.openqa.selenium.remote.DriverCommand.GET(DriverCommand.java:187)
+at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:297)
+at base.Base.launchApplication(Base.java:46)
+at testcases.Logintest.startup(Logintest.java:26)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:823)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:590)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- bothFieldsEmpty -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.Logintest@7b98f307]" started-at="2023-06-01T19:51:26 PKT" name="tearDown" finished-at="2023-06-01T19:51:29 PKT" duration-ms="2776" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.Logintest@30c15d8b]" started-at="2023-06-13T20:46:58 PKT" name="tearDown" finished-at="2023-06-13T20:46:58 PKT" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="startup(java.lang.String)[pri:0, instance:testcases.Logintest@7b98f307]" started-at="2023-06-01T19:51:29 PKT" name="startup" finished-at="2023-06-01T19:51:35 PKT" duration-ms="6702" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
+        <test-method is-config="true" signature="startup(java.lang.String)[pri:0, instance:testcases.Logintest@30c15d8b]" started-at="2023-06-13T20:46:58 PKT" name="startup" finished-at="2023-06-13T20:46:58 PKT" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startup -->
-        <test-method signature="signInButton()[pri:10, instance:testcases.Logintest@7b98f307]" started-at="2023-06-01T19:51:35 PKT" name="signInButton" finished-at="2023-06-01T19:51:36 PKT" duration-ms="853" status="FAIL">
-          <exception class="java.lang.AssertionError">
+        <test-method signature="signInButton()[pri:10, instance:testcases.Logintest@30c15d8b]" started-at="2023-06-13T20:46:58 PKT" name="signInButton" finished-at="2023-06-13T20:46:58 PKT" duration-ms="0" status="SKIP">
+          <exception class="java.lang.NullPointerException">
             <message>
-              <![CDATA[expected [false] but found [true]]]>
+              <![CDATA[null value in entry: url=null]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [false] but found [true]
-at org.testng.Assert.fail(Assert.java:110)
-at org.testng.Assert.failNotEquals(Assert.java:1577)
-at org.testng.Assert.assertFalse(Assert.java:78)
-at org.testng.Assert.assertFalse(Assert.java:88)
-at testcases.Logintest.signInButton(Logintest.java:114)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+              <![CDATA[java.lang.NullPointerException: null value in entry: url=null
+at com.google.common.collect.CollectPreconditions.checkEntryNotNull(CollectPreconditions.java:33)
+at com.google.common.collect.SingletonImmutableBiMap.<init>(SingletonImmutableBiMap.java:43)
+at com.google.common.collect.ImmutableBiMap.of(ImmutableBiMap.java:81)
+at com.google.common.collect.ImmutableMap.of(ImmutableMap.java:128)
+at org.openqa.selenium.remote.DriverCommand.GET(DriverCommand.java:187)
+at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:297)
+at base.Base.launchApplication(Base.java:46)
+at testcases.Logintest.startup(Logintest.java:26)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:823)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:590)
 at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
 at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
 at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
@@ -291,104 +663,57 @@ at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 at org.testng.TestRunner.privateRun(TestRunner.java:829)
 at org.testng.TestRunner.run(TestRunner.java:602)
 at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-at java.base/java.lang.Thread.run(Thread.java:1589)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- signInButton -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.Logintest@7b98f307]" started-at="2023-06-01T19:51:39 PKT" name="tearDown" finished-at="2023-06-01T19:51:40 PKT" duration-ms="607" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.Logintest@30c15d8b]" started-at="2023-06-13T20:46:58 PKT" name="tearDown" finished-at="2023-06-13T20:46:58 PKT" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="startup(java.lang.String)[pri:0, instance:testcases.Logintest@7b98f307]" started-at="2023-06-01T19:51:40 PKT" name="startup" finished-at="2023-06-01T19:51:47 PKT" duration-ms="7118" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
+        <test-method is-config="true" signature="startup(java.lang.String)[pri:0, instance:testcases.Logintest@30c15d8b]" started-at="2023-06-13T20:46:58 PKT" name="startup" finished-at="2023-06-13T20:46:58 PKT" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startup -->
-        <test-method signature="AbnormalEmailAndInvalidPassword()[pri:11, instance:testcases.Logintest@7b98f307]" started-at="2023-06-01T19:51:47 PKT" name="AbnormalEmailAndInvalidPassword" finished-at="2023-06-01T19:51:57 PKT" duration-ms="9357" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- AbnormalEmailAndInvalidPassword -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.Logintest@7b98f307]" started-at="2023-06-01T19:51:57 PKT" name="tearDown" finished-at="2023-06-01T19:52:03 PKT" duration-ms="6637" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="startup(java.lang.String)[pri:0, instance:testcases.Logintest@7b98f307]" started-at="2023-06-01T19:52:03 PKT" name="startup" finished-at="2023-06-01T19:52:20 PKT" duration-ms="16870" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- startup -->
-        <test-method signature="validCredentialsAndRefresh()[pri:12, instance:testcases.Logintest@7b98f307]" started-at="2023-06-01T19:52:20 PKT" name="validCredentialsAndRefresh" finished-at="2023-06-01T19:52:33 PKT" duration-ms="13038" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validCredentialsAndRefresh -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.Logintest@7b98f307]" started-at="2023-06-01T19:52:33 PKT" name="tearDown" finished-at="2023-06-01T19:52:34 PKT" duration-ms="655" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="startup(java.lang.String)[pri:0, instance:testcases.Logintest@7b98f307]" started-at="2023-06-01T19:52:34 PKT" name="startup" finished-at="2023-06-01T19:52:41 PKT" duration-ms="7615" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- startup -->
-        <test-method signature="validCredentialsAndMoveToNewTab()[pri:13, instance:testcases.Logintest@7b98f307]" started-at="2023-06-01T19:52:41 PKT" name="validCredentialsAndMoveToNewTab" finished-at="2023-06-01T19:52:53 PKT" duration-ms="11139" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validCredentialsAndMoveToNewTab -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.Logintest@7b98f307]" started-at="2023-06-01T19:52:53 PKT" name="tearDown" finished-at="2023-06-01T19:52:53 PKT" duration-ms="475" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="startup(java.lang.String)[pri:0, instance:testcases.Logintest@7b98f307]" started-at="2023-06-01T19:52:53 PKT" name="startup" finished-at="2023-06-01T19:52:59 PKT" duration-ms="6209" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- startup -->
-        <test-method signature="afterLoginAndLogoutGoBackVerifyTheLogoutSccessfull()[pri:14, instance:testcases.Logintest@7b98f307]" started-at="2023-06-01T19:52:59 PKT" name="afterLoginAndLogoutGoBackVerifyTheLogoutSccessfull" finished-at="2023-06-01T19:53:24 PKT" duration-ms="25245" status="FAIL">
-          <exception class="java.lang.AssertionError">
+        <test-method signature="AbnormalEmailAndInvalidPassword()[pri:11, instance:testcases.Logintest@30c15d8b]" started-at="2023-06-13T20:46:58 PKT" name="AbnormalEmailAndInvalidPassword" finished-at="2023-06-13T20:46:58 PKT" duration-ms="2" status="SKIP">
+          <exception class="java.lang.NullPointerException">
             <message>
-              <![CDATA[null]]>
+              <![CDATA[null value in entry: url=null]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: null
-at org.testng.Assert.fail(Assert.java:110)
-at org.testng.Assert.fail(Assert.java:115)
-at testcases.Logintest.afterLoginAndLogoutGoBackVerifyTheLogoutSccessfull(Logintest.java:159)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+              <![CDATA[java.lang.NullPointerException: null value in entry: url=null
+at com.google.common.collect.CollectPreconditions.checkEntryNotNull(CollectPreconditions.java:33)
+at com.google.common.collect.SingletonImmutableBiMap.<init>(SingletonImmutableBiMap.java:43)
+at com.google.common.collect.ImmutableBiMap.of(ImmutableBiMap.java:81)
+at com.google.common.collect.ImmutableMap.of(ImmutableMap.java:128)
+at org.openqa.selenium.remote.DriverCommand.GET(DriverCommand.java:187)
+at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:297)
+at base.Base.launchApplication(Base.java:46)
+at testcases.Logintest.startup(Logintest.java:26)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:823)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:590)
 at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
 at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
 at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
@@ -399,910 +724,384 @@ at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 at org.testng.TestRunner.privateRun(TestRunner.java:829)
 at org.testng.TestRunner.run(TestRunner.java:602)
 at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-at java.base/java.lang.Thread.run(Thread.java:1589)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AbnormalEmailAndInvalidPassword -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.Logintest@30c15d8b]" started-at="2023-06-13T20:46:58 PKT" name="tearDown" finished-at="2023-06-13T20:46:58 PKT" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="startup(java.lang.String)[pri:0, instance:testcases.Logintest@30c15d8b]" started-at="2023-06-13T20:46:58 PKT" name="startup" finished-at="2023-06-13T20:46:58 PKT" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startup -->
+        <test-method signature="validCredentialsAndRefresh()[pri:12, instance:testcases.Logintest@30c15d8b]" started-at="2023-06-13T20:46:58 PKT" name="validCredentialsAndRefresh" finished-at="2023-06-13T20:46:58 PKT" duration-ms="1" status="SKIP">
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[null value in entry: url=null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: null value in entry: url=null
+at com.google.common.collect.CollectPreconditions.checkEntryNotNull(CollectPreconditions.java:33)
+at com.google.common.collect.SingletonImmutableBiMap.<init>(SingletonImmutableBiMap.java:43)
+at com.google.common.collect.ImmutableBiMap.of(ImmutableBiMap.java:81)
+at com.google.common.collect.ImmutableMap.of(ImmutableMap.java:128)
+at org.openqa.selenium.remote.DriverCommand.GET(DriverCommand.java:187)
+at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:297)
+at base.Base.launchApplication(Base.java:46)
+at testcases.Logintest.startup(Logintest.java:26)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:823)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:590)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validCredentialsAndRefresh -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.Logintest@30c15d8b]" started-at="2023-06-13T20:46:58 PKT" name="tearDown" finished-at="2023-06-13T20:46:58 PKT" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="startup(java.lang.String)[pri:0, instance:testcases.Logintest@30c15d8b]" started-at="2023-06-13T20:46:58 PKT" name="startup" finished-at="2023-06-13T20:46:58 PKT" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startup -->
+        <test-method signature="validCredentialsAndMoveToNewTab()[pri:13, instance:testcases.Logintest@30c15d8b]" started-at="2023-06-13T20:46:58 PKT" name="validCredentialsAndMoveToNewTab" finished-at="2023-06-13T20:46:58 PKT" duration-ms="0" status="SKIP">
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[null value in entry: url=null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: null value in entry: url=null
+at com.google.common.collect.CollectPreconditions.checkEntryNotNull(CollectPreconditions.java:33)
+at com.google.common.collect.SingletonImmutableBiMap.<init>(SingletonImmutableBiMap.java:43)
+at com.google.common.collect.ImmutableBiMap.of(ImmutableBiMap.java:81)
+at com.google.common.collect.ImmutableMap.of(ImmutableMap.java:128)
+at org.openqa.selenium.remote.DriverCommand.GET(DriverCommand.java:187)
+at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:297)
+at base.Base.launchApplication(Base.java:46)
+at testcases.Logintest.startup(Logintest.java:26)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:823)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:590)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validCredentialsAndMoveToNewTab -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.Logintest@30c15d8b]" started-at="2023-06-13T20:46:58 PKT" name="tearDown" finished-at="2023-06-13T20:46:58 PKT" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="startup(java.lang.String)[pri:0, instance:testcases.Logintest@30c15d8b]" started-at="2023-06-13T20:46:58 PKT" name="startup" finished-at="2023-06-13T20:46:58 PKT" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startup -->
+        <test-method signature="afterLoginAndLogoutGoBackVerifyTheLogoutSccessfull()[pri:14, instance:testcases.Logintest@30c15d8b]" started-at="2023-06-13T20:46:58 PKT" name="afterLoginAndLogoutGoBackVerifyTheLogoutSccessfull" finished-at="2023-06-13T20:46:58 PKT" duration-ms="0" status="SKIP">
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[null value in entry: url=null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: null value in entry: url=null
+at com.google.common.collect.CollectPreconditions.checkEntryNotNull(CollectPreconditions.java:33)
+at com.google.common.collect.SingletonImmutableBiMap.<init>(SingletonImmutableBiMap.java:43)
+at com.google.common.collect.ImmutableBiMap.of(ImmutableBiMap.java:81)
+at com.google.common.collect.ImmutableMap.of(ImmutableMap.java:128)
+at org.openqa.selenium.remote.DriverCommand.GET(DriverCommand.java:187)
+at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:297)
+at base.Base.launchApplication(Base.java:46)
+at testcases.Logintest.startup(Logintest.java:26)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:823)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:590)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterLoginAndLogoutGoBackVerifyTheLogoutSccessfull -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.Logintest@7b98f307]" started-at="2023-06-01T19:53:25 PKT" name="tearDown" finished-at="2023-06-01T19:53:27 PKT" duration-ms="1717" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.Logintest@30c15d8b]" started-at="2023-06-13T20:46:58 PKT" name="tearDown" finished-at="2023-06-13T20:46:58 PKT" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="startup(java.lang.String)[pri:0, instance:testcases.Logintest@7b98f307]" started-at="2023-06-01T19:53:27 PKT" name="startup" finished-at="2023-06-01T19:53:34 PKT" duration-ms="6726" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
+        <test-method is-config="true" signature="startup(java.lang.String)[pri:0, instance:testcases.Logintest@30c15d8b]" started-at="2023-06-13T20:46:58 PKT" name="startup" finished-at="2023-06-13T20:46:58 PKT" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startup -->
-        <test-method signature="verifyURLBeforeAndAfterLogin()[pri:15, instance:testcases.Logintest@7b98f307]" started-at="2023-06-01T19:53:34 PKT" name="verifyURLBeforeAndAfterLogin" finished-at="2023-06-01T19:53:37 PKT" duration-ms="3331" status="PASS">
+        <test-method signature="verifyURLBeforeAndAfterLogin()[pri:15, instance:testcases.Logintest@30c15d8b]" started-at="2023-06-13T20:46:58 PKT" name="verifyURLBeforeAndAfterLogin" finished-at="2023-06-13T20:46:58 PKT" duration-ms="0" status="SKIP">
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[null value in entry: url=null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: null value in entry: url=null
+at com.google.common.collect.CollectPreconditions.checkEntryNotNull(CollectPreconditions.java:33)
+at com.google.common.collect.SingletonImmutableBiMap.<init>(SingletonImmutableBiMap.java:43)
+at com.google.common.collect.ImmutableBiMap.of(ImmutableBiMap.java:81)
+at com.google.common.collect.ImmutableMap.of(ImmutableMap.java:128)
+at org.openqa.selenium.remote.DriverCommand.GET(DriverCommand.java:187)
+at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:297)
+at base.Base.launchApplication(Base.java:46)
+at testcases.Logintest.startup(Logintest.java:26)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:823)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:590)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyURLBeforeAndAfterLogin -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.Logintest@7b98f307]" started-at="2023-06-01T19:53:37 PKT" name="tearDown" finished-at="2023-06-01T19:53:38 PKT" duration-ms="1621" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.Logintest@30c15d8b]" started-at="2023-06-13T20:46:58 PKT" name="tearDown" finished-at="2023-06-13T20:46:58 PKT" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="startup(java.lang.String)[pri:0, instance:testcases.Logintest@7b98f307]" started-at="2023-06-01T19:53:41 PKT" name="startup" finished-at="2023-06-01T19:53:50 PKT" duration-ms="8846" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- startup -->
-        <test-method signature="verifyLoginWithValidCredentialsMultipleTimes(java.lang.String,java.lang.String)[pri:16, instance:testcases.Logintest@7b98f307]" started-at="2023-06-01T19:53:50 PKT" name="verifyLoginWithValidCredentialsMultipleTimes" data-provider="validEmails" finished-at="2023-06-01T19:54:01 PKT" duration-ms="10765" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[basitbhutto333@gmail.com]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Basit@12345]]>
-              </value>
-            </param>
-          </params>
+        <test-method signature="verifyLoginWithValidCredentialsMultipleTimes(java.lang.String,java.lang.String)[pri:16, instance:testcases.Logintest@30c15d8b]" started-at="2023-06-13T20:46:58 PKT" name="verifyLoginWithValidCredentialsMultipleTimes" data-provider="validEmails" finished-at="2023-06-13T20:46:58 PKT" duration-ms="0" status="FAIL">
+          <exception class="java.lang.RuntimeException">
+            <message>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.apache.poi.xssf.usermodel.XSSFWorkbook.getSheet(String)" because "workbook" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.RuntimeException: java.lang.NullPointerException: Cannot invoke "org.apache.poi.xssf.usermodel.XSSFWorkbook.getSheet(String)" because "workbook" is null
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:57)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:157)
+at org.testng.internal.Parameters.handleParameters(Parameters.java:803)
+at org.testng.internal.Parameters.handleParameters(Parameters.java:728)
+at org.testng.internal.invokers.ParameterHandler.handleParameters(ParameterHandler.java:72)
+at org.testng.internal.invokers.ParameterHandler.createParameters(ParameterHandler.java:51)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:924)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: java.lang.NullPointerException: Cannot invoke "org.apache.poi.xssf.usermodel.XSSFWorkbook.getSheet(String)" because "workbook" is null
+at utilities.Utilities.validDataSupplyEmailAndPassword(Utilities.java:114)
+at testcases.Logintest.validEmailsAndPassword(Logintest.java:194)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:53)
+... 25 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.RuntimeException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLoginWithValidCredentialsMultipleTimes -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.Logintest@7b98f307]" started-at="2023-06-01T19:54:01 PKT" name="tearDown" finished-at="2023-06-01T19:54:02 PKT" duration-ms="717" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="startup(java.lang.String)[pri:0, instance:testcases.Logintest@7b98f307]" started-at="2023-06-01T19:54:02 PKT" name="startup" finished-at="2023-06-01T19:54:09 PKT" duration-ms="7177" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
+        <test-method is-config="true" signature="startup(java.lang.String)[pri:0, instance:testcases.Logintest@30c15d8b]" started-at="2023-06-13T20:46:58 PKT" name="startup" finished-at="2023-06-13T20:46:58 PKT" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startup -->
-        <test-method signature="verifyLoginWithValidCredentialsMultipleTimes(java.lang.String,java.lang.String)[pri:16, instance:testcases.Logintest@7b98f307]" started-at="2023-06-01T19:54:09 PKT" name="verifyLoginWithValidCredentialsMultipleTimes" data-provider="validEmails" finished-at="2023-06-01T19:54:17 PKT" duration-ms="8597" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[usmanamin735@gmail.com]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Usman@12345]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyLoginWithValidCredentialsMultipleTimes -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.Logintest@7b98f307]" started-at="2023-06-01T19:54:17 PKT" name="tearDown" finished-at="2023-06-01T19:54:18 PKT" duration-ms="574" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="startup(java.lang.String)[pri:0, instance:testcases.Logintest@7b98f307]" started-at="2023-06-01T19:54:18 PKT" name="startup" finished-at="2023-06-01T19:54:25 PKT" duration-ms="7155" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- startup -->
-        <test-method signature="verifyLoginWithValidCredentialsMultipleTimes(java.lang.String,java.lang.String)[pri:16, instance:testcases.Logintest@7b98f307]" started-at="2023-06-01T19:54:25 PKT" name="verifyLoginWithValidCredentialsMultipleTimes" data-provider="validEmails" finished-at="2023-06-01T19:54:34 PKT" duration-ms="8784" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[usmanamin735@gmail.com]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Usman@12345]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyLoginWithValidCredentialsMultipleTimes -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.Logintest@7b98f307]" started-at="2023-06-01T19:54:34 PKT" name="tearDown" finished-at="2023-06-01T19:54:35 PKT" duration-ms="901" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="startup(java.lang.String)[pri:0, instance:testcases.Logintest@7b98f307]" started-at="2023-06-01T19:54:35 PKT" name="startup" finished-at="2023-06-01T19:54:42 PKT" duration-ms="6868" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- startup -->
-        <test-method signature="verifyLoginWithValidCredentialsMultipleTimes(java.lang.String,java.lang.String)[pri:16, instance:testcases.Logintest@7b98f307]" started-at="2023-06-01T19:54:42 PKT" name="verifyLoginWithValidCredentialsMultipleTimes" data-provider="validEmails" finished-at="2023-06-01T19:54:49 PKT" duration-ms="7687" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[basitbhutto333@gmail.com]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Basit@12345]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyLoginWithValidCredentialsMultipleTimes -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.Logintest@7b98f307]" started-at="2023-06-01T19:54:49 PKT" name="tearDown" finished-at="2023-06-01T19:54:50 PKT" duration-ms="620" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="startup(java.lang.String)[pri:0, instance:testcases.Logintest@7b98f307]" started-at="2023-06-01T19:54:50 PKT" name="startup" finished-at="2023-06-01T19:54:59 PKT" duration-ms="8830" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- startup -->
-        <test-method signature="verifyLoginWithValidCredentialsMultipleTimes(java.lang.String,java.lang.String)[pri:16, instance:testcases.Logintest@7b98f307]" started-at="2023-06-01T19:54:59 PKT" name="verifyLoginWithValidCredentialsMultipleTimes" data-provider="validEmails" finished-at="2023-06-01T19:55:08 PKT" duration-ms="8829" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[basitbhutto333@gmail.com]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Basit@12345]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyLoginWithValidCredentialsMultipleTimes -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.Logintest@7b98f307]" started-at="2023-06-01T19:55:08 PKT" name="tearDown" finished-at="2023-06-01T19:55:11 PKT" duration-ms="3489" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="startup(java.lang.String)[pri:0, instance:testcases.Logintest@7b98f307]" started-at="2023-06-01T19:55:11 PKT" name="startup" finished-at="2023-06-01T19:55:18 PKT" duration-ms="7060" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- startup -->
-        <test-method signature="verifyLoginWithValidCredentialsMultipleTimes(java.lang.String,java.lang.String)[pri:16, instance:testcases.Logintest@7b98f307]" started-at="2023-06-01T19:55:18 PKT" name="verifyLoginWithValidCredentialsMultipleTimes" data-provider="validEmails" finished-at="2023-06-01T19:55:28 PKT" duration-ms="9891" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[basitbhutto333@gmail.com]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Basit@12345]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyLoginWithValidCredentialsMultipleTimes -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.Logintest@7b98f307]" started-at="2023-06-01T19:55:28 PKT" name="tearDown" finished-at="2023-06-01T19:55:32 PKT" duration-ms="3714" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="startup(java.lang.String)[pri:0, instance:testcases.Logintest@7b98f307]" started-at="2023-06-01T19:55:32 PKT" name="startup" finished-at="2023-06-01T19:55:40 PKT" duration-ms="8052" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- startup -->
-        <test-method signature="loginWithValidCredentialsAndBackwardAndForward()[pri:17, instance:testcases.Logintest@7b98f307]" started-at="2023-06-01T19:55:40 PKT" name="loginWithValidCredentialsAndBackwardAndForward" finished-at="2023-06-01T19:55:53 PKT" duration-ms="12915" status="PASS">
+        <test-method signature="loginWithValidCredentialsAndBackwardAndForward()[pri:17, instance:testcases.Logintest@30c15d8b]" started-at="2023-06-13T20:46:58 PKT" name="loginWithValidCredentialsAndBackwardAndForward" finished-at="2023-06-13T20:46:58 PKT" duration-ms="1" status="SKIP">
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[null value in entry: url=null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: null value in entry: url=null
+at com.google.common.collect.CollectPreconditions.checkEntryNotNull(CollectPreconditions.java:33)
+at com.google.common.collect.SingletonImmutableBiMap.<init>(SingletonImmutableBiMap.java:43)
+at com.google.common.collect.ImmutableBiMap.of(ImmutableBiMap.java:81)
+at com.google.common.collect.ImmutableMap.of(ImmutableMap.java:128)
+at org.openqa.selenium.remote.DriverCommand.GET(DriverCommand.java:187)
+at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:297)
+at base.Base.launchApplication(Base.java:46)
+at testcases.Logintest.startup(Logintest.java:26)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:823)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:590)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginWithValidCredentialsAndBackwardAndForward -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.Logintest@7b98f307]" started-at="2023-06-01T19:55:53 PKT" name="tearDown" finished-at="2023-06-01T19:55:54 PKT" duration-ms="796" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.Logintest@30c15d8b]" started-at="2023-06-13T20:46:58 PKT" name="tearDown" finished-at="2023-06-13T20:46:58 PKT" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- testcases.Logintest -->
-    </test> <!-- Chrome Test -->
-    <test started-at="2023-06-01T19:47:43 PKT" name="FireFox Test" finished-at="2023-06-01T19:58:58 PKT" duration-ms="675355">
-      <class name="testcases.Logintest">
-        <test-method is-config="true" signature="startup(java.lang.String)[pri:0, instance:testcases.Logintest@26794848]" started-at="2023-06-01T19:47:44 PKT" name="startup" finished-at="2023-06-01T19:48:16 PKT" duration-ms="32188" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[firefox]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- startup -->
-        <test-method signature="validEmailAndValidPassword()[pri:1, instance:testcases.Logintest@26794848]" started-at="2023-06-01T19:48:16 PKT" name="validEmailAndValidPassword" finished-at="2023-06-01T19:48:22 PKT" duration-ms="6665" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validEmailAndValidPassword -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.Logintest@26794848]" started-at="2023-06-01T19:48:22 PKT" name="tearDown" finished-at="2023-06-01T19:48:28 PKT" duration-ms="5503" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="startup(java.lang.String)[pri:0, instance:testcases.Logintest@26794848]" started-at="2023-06-01T19:48:28 PKT" name="startup" finished-at="2023-06-01T19:48:45 PKT" duration-ms="16691" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[firefox]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- startup -->
-        <test-method signature="validEmailAndInvalidPassword()[pri:2, instance:testcases.Logintest@26794848]" started-at="2023-06-01T19:48:45 PKT" name="validEmailAndInvalidPassword" finished-at="2023-06-01T19:48:53 PKT" duration-ms="8089" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validEmailAndInvalidPassword -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.Logintest@26794848]" started-at="2023-06-01T19:48:53 PKT" name="tearDown" finished-at="2023-06-01T19:48:56 PKT" duration-ms="2932" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="startup(java.lang.String)[pri:0, instance:testcases.Logintest@26794848]" started-at="2023-06-01T19:48:56 PKT" name="startup" finished-at="2023-06-01T19:49:11 PKT" duration-ms="15016" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[firefox]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- startup -->
-        <test-method signature="invalidEmailValidPassword()[pri:3, instance:testcases.Logintest@26794848]" started-at="2023-06-01T19:49:11 PKT" name="invalidEmailValidPassword" finished-at="2023-06-01T19:49:17 PKT" duration-ms="6624" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- invalidEmailValidPassword -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.Logintest@26794848]" started-at="2023-06-01T19:49:17 PKT" name="tearDown" finished-at="2023-06-01T19:49:22 PKT" duration-ms="4293" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="startup(java.lang.String)[pri:0, instance:testcases.Logintest@26794848]" started-at="2023-06-01T19:49:22 PKT" name="startup" finished-at="2023-06-01T19:49:41 PKT" duration-ms="19451" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[firefox]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- startup -->
-        <test-method signature="invalidEmailAndInvalidPassword(java.lang.String,java.lang.String)[pri:4, instance:testcases.Logintest@26794848]" started-at="2023-06-01T19:49:41 PKT" name="invalidEmailAndInvalidPassword" data-provider="Invaliddata" finished-at="2023-06-01T19:49:50 PKT" duration-ms="9109" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[qaiser.anwar@gmail.com]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[shahid.iqbal]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- invalidEmailAndInvalidPassword -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.Logintest@26794848]" started-at="2023-06-01T19:49:50 PKT" name="tearDown" finished-at="2023-06-01T19:49:57 PKT" duration-ms="6756" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="startup(java.lang.String)[pri:0, instance:testcases.Logintest@26794848]" started-at="2023-06-01T19:49:57 PKT" name="startup" finished-at="2023-06-01T19:50:16 PKT" duration-ms="19253" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[firefox]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- startup -->
-        <test-method signature="onlyValidEmail()[pri:5, instance:testcases.Logintest@26794848]" started-at="2023-06-01T19:50:16 PKT" name="onlyValidEmail" finished-at="2023-06-01T19:50:25 PKT" duration-ms="8570" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- onlyValidEmail -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.Logintest@26794848]" started-at="2023-06-01T19:50:25 PKT" name="tearDown" finished-at="2023-06-01T19:50:28 PKT" duration-ms="3249" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="startup(java.lang.String)[pri:0, instance:testcases.Logintest@26794848]" started-at="2023-06-01T19:50:28 PKT" name="startup" finished-at="2023-06-01T19:50:41 PKT" duration-ms="13215" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[firefox]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- startup -->
-        <test-method signature="onlyValidPassword()[pri:6, instance:testcases.Logintest@26794848]" started-at="2023-06-01T19:50:41 PKT" name="onlyValidPassword" finished-at="2023-06-01T19:50:48 PKT" duration-ms="6766" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- onlyValidPassword -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.Logintest@26794848]" started-at="2023-06-01T19:50:48 PKT" name="tearDown" finished-at="2023-06-01T19:50:53 PKT" duration-ms="5241" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="startup(java.lang.String)[pri:0, instance:testcases.Logintest@26794848]" started-at="2023-06-01T19:50:53 PKT" name="startup" finished-at="2023-06-01T19:51:08 PKT" duration-ms="15041" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[firefox]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- startup -->
-        <test-method signature="onlyInvalidAbnormalEmail()[pri:7, instance:testcases.Logintest@26794848]" started-at="2023-06-01T19:51:08 PKT" name="onlyInvalidAbnormalEmail" finished-at="2023-06-01T19:51:26 PKT" duration-ms="17750" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[Unable to locate element: //p[contains(text(),'Please enter valid email')]
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: '4.9.0', revision: 'd7057100a6'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.2'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [f9dad78a-8f66-4ddd-810e-fa7fcd124a94, findElement {using=xpath, value=//p[contains(text(),'Please enter valid email')]}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 113.0.2, moz:accessibilityChecks: false, moz:buildID: 20230522134052, moz:debuggerAddress: 127.0.0.1:25009, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 5552, moz:profile: C:\Users\DELL\AppData\Local..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:25009/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: f9dad78a-8f66-4ddd-810e-fa7fcd124a94]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: //p[contains(text(),'Please enter valid email')]
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: '4.9.0', revision: 'd7057100a6'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.2'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [f9dad78a-8f66-4ddd-810e-fa7fcd124a94, findElement {using=xpath, value=//p[contains(text(),'Please enter valid email')]}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 113.0.2, moz:accessibilityChecks: false, moz:buildID: 20230522134052, moz:debuggerAddress: 127.0.0.1:25009, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 5552, moz:profile: C:\Users\DELL\AppData\Local..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:25009/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: f9dad78a-8f66-4ddd-810e-fa7fcd124a94
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-at jdk.proxy2/jdk.proxy2.$Proxy20.isDisplayed(Unknown Source)
-at webpages.LoginPage.enterValidEmail(LoginPage.java:93)
-at testcases.Logintest.onlyInvalidAbnormalEmail(Logintest.java:93)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-at java.base/java.lang.reflect.Method.invoke(Method.java:578)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:829)
-at org.testng.TestRunner.run(TestRunner.java:602)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-at java.base/java.lang.Thread.run(Thread.java:1589)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- onlyInvalidAbnormalEmail -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.Logintest@26794848]" started-at="2023-06-01T19:51:27 PKT" name="tearDown" finished-at="2023-06-01T19:51:33 PKT" duration-ms="5942" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="startup(java.lang.String)[pri:0, instance:testcases.Logintest@26794848]" started-at="2023-06-01T19:51:33 PKT" name="startup" finished-at="2023-06-01T19:51:47 PKT" duration-ms="14745" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[firefox]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- startup -->
-        <test-method signature="checkCrossEyeIcon()[pri:8, instance:testcases.Logintest@26794848]" started-at="2023-06-01T19:51:47 PKT" name="checkCrossEyeIcon" finished-at="2023-06-01T19:51:49 PKT" duration-ms="1622" status="FAIL">
-          <exception class="org.openqa.selenium.ElementNotInteractableException">
-            <message>
-              <![CDATA[Element <img class="w-4" src="images/PasswordCrossEye.svg"> could not be scrolled into view
-Build info: version: '4.9.0', revision: 'd7057100a6'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.2'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [f650c3a8-dc25-4f7c-a51a-79057ffc4e6e, clickElement {id=ac49c0e1-a153-4b35-9f24-29a6f73bfdb8}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 113.0.2, moz:accessibilityChecks: false, moz:buildID: 20230522134052, moz:debuggerAddress: 127.0.0.1:4675, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 10696, moz:profile: C:\Users\DELL\AppData\Local..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:4675/devtool..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Element: [[FirefoxDriver: firefox on WINDOWS (f650c3a8-dc25-4f7c-a51a-79057ffc4e6e)] -> xpath: //img[@src='images/PasswordCrossEye.svg']]
-Session ID: f650c3a8-dc25-4f7c-a51a-79057ffc4e6e]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.ElementNotInteractableException: Element <img class="w-4" src="images/PasswordCrossEye.svg"> could not be scrolled into view
-Build info: version: '4.9.0', revision: 'd7057100a6'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.2'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [f650c3a8-dc25-4f7c-a51a-79057ffc4e6e, clickElement {id=ac49c0e1-a153-4b35-9f24-29a6f73bfdb8}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 113.0.2, moz:accessibilityChecks: false, moz:buildID: 20230522134052, moz:debuggerAddress: 127.0.0.1:4675, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 10696, moz:profile: C:\Users\DELL\AppData\Local..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:4675/devtool..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Element: [[FirefoxDriver: firefox on WINDOWS (f650c3a8-dc25-4f7c-a51a-79057ffc4e6e)] -> xpath: //img[@src='images/PasswordCrossEye.svg']]
-Session ID: f650c3a8-dc25-4f7c-a51a-79057ffc4e6e
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
-at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-at java.base/java.lang.reflect.Method.invoke(Method.java:578)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
-at jdk.proxy2/jdk.proxy2.$Proxy20.click(Unknown Source)
-at webpages.LoginPage.crossEyeIcon(LoginPage.java:98)
-at testcases.Logintest.checkCrossEyeIcon(Logintest.java:99)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-at java.base/java.lang.reflect.Method.invoke(Method.java:578)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:829)
-at org.testng.TestRunner.run(TestRunner.java:602)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-at java.base/java.lang.Thread.run(Thread.java:1589)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.ElementNotInteractableException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- checkCrossEyeIcon -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.Logintest@26794848]" started-at="2023-06-01T19:51:49 PKT" name="tearDown" finished-at="2023-06-01T19:51:53 PKT" duration-ms="3463" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="startup(java.lang.String)[pri:0, instance:testcases.Logintest@26794848]" started-at="2023-06-01T19:51:53 PKT" name="startup" finished-at="2023-06-01T19:52:08 PKT" duration-ms="14829" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[firefox]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- startup -->
-        <test-method signature="bothFieldsEmpty()[pri:9, instance:testcases.Logintest@26794848]" started-at="2023-06-01T19:52:08 PKT" name="bothFieldsEmpty" finished-at="2023-06-01T19:52:20 PKT" duration-ms="11774" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- bothFieldsEmpty -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.Logintest@26794848]" started-at="2023-06-01T19:52:20 PKT" name="tearDown" finished-at="2023-06-01T19:52:24 PKT" duration-ms="4566" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="startup(java.lang.String)[pri:0, instance:testcases.Logintest@26794848]" started-at="2023-06-01T19:52:24 PKT" name="startup" finished-at="2023-06-01T19:52:39 PKT" duration-ms="15062" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[firefox]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- startup -->
-        <test-method signature="signInButton()[pri:10, instance:testcases.Logintest@26794848]" started-at="2023-06-01T19:52:39 PKT" name="signInButton" finished-at="2023-06-01T19:52:41 PKT" duration-ms="1774" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [false] but found [true]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [false] but found [true]
-at org.testng.Assert.fail(Assert.java:110)
-at org.testng.Assert.failNotEquals(Assert.java:1577)
-at org.testng.Assert.assertFalse(Assert.java:78)
-at org.testng.Assert.assertFalse(Assert.java:88)
-at testcases.Logintest.signInButton(Logintest.java:114)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-at java.base/java.lang.reflect.Method.invoke(Method.java:578)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:829)
-at org.testng.TestRunner.run(TestRunner.java:602)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-at java.base/java.lang.Thread.run(Thread.java:1589)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- signInButton -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.Logintest@26794848]" started-at="2023-06-01T19:52:41 PKT" name="tearDown" finished-at="2023-06-01T19:52:45 PKT" duration-ms="4033" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="startup(java.lang.String)[pri:0, instance:testcases.Logintest@26794848]" started-at="2023-06-01T19:52:45 PKT" name="startup" finished-at="2023-06-01T19:53:00 PKT" duration-ms="14240" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[firefox]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- startup -->
-        <test-method signature="AbnormalEmailAndInvalidPassword()[pri:11, instance:testcases.Logintest@26794848]" started-at="2023-06-01T19:53:00 PKT" name="AbnormalEmailAndInvalidPassword" finished-at="2023-06-01T19:53:08 PKT" duration-ms="8322" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- AbnormalEmailAndInvalidPassword -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.Logintest@26794848]" started-at="2023-06-01T19:53:08 PKT" name="tearDown" finished-at="2023-06-01T19:53:11 PKT" duration-ms="2668" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="startup(java.lang.String)[pri:0, instance:testcases.Logintest@26794848]" started-at="2023-06-01T19:53:11 PKT" name="startup" finished-at="2023-06-01T19:53:22 PKT" duration-ms="11147" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[firefox]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- startup -->
-        <test-method signature="validCredentialsAndRefresh()[pri:12, instance:testcases.Logintest@26794848]" started-at="2023-06-01T19:53:22 PKT" name="validCredentialsAndRefresh" finished-at="2023-06-01T19:53:34 PKT" duration-ms="12049" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validCredentialsAndRefresh -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.Logintest@26794848]" started-at="2023-06-01T19:53:34 PKT" name="tearDown" finished-at="2023-06-01T19:53:38 PKT" duration-ms="4518" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="startup(java.lang.String)[pri:0, instance:testcases.Logintest@26794848]" started-at="2023-06-01T19:53:38 PKT" name="startup" finished-at="2023-06-01T19:53:54 PKT" duration-ms="16071" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[firefox]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- startup -->
-        <test-method signature="validCredentialsAndMoveToNewTab()[pri:13, instance:testcases.Logintest@26794848]" started-at="2023-06-01T19:53:54 PKT" name="validCredentialsAndMoveToNewTab" finished-at="2023-06-01T19:54:07 PKT" duration-ms="12603" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validCredentialsAndMoveToNewTab -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.Logintest@26794848]" started-at="2023-06-01T19:54:07 PKT" name="tearDown" finished-at="2023-06-01T19:54:11 PKT" duration-ms="4364" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="startup(java.lang.String)[pri:0, instance:testcases.Logintest@26794848]" started-at="2023-06-01T19:54:11 PKT" name="startup" finished-at="2023-06-01T19:54:25 PKT" duration-ms="13208" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[firefox]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- startup -->
-        <test-method signature="afterLoginAndLogoutGoBackVerifyTheLogoutSccessfull()[pri:14, instance:testcases.Logintest@26794848]" started-at="2023-06-01T19:54:25 PKT" name="afterLoginAndLogoutGoBackVerifyTheLogoutSccessfull" finished-at="2023-06-01T19:54:39 PKT" duration-ms="14506" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterLoginAndLogoutGoBackVerifyTheLogoutSccessfull -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.Logintest@26794848]" started-at="2023-06-01T19:54:39 PKT" name="tearDown" finished-at="2023-06-01T19:54:42 PKT" duration-ms="2950" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="startup(java.lang.String)[pri:0, instance:testcases.Logintest@26794848]" started-at="2023-06-01T19:54:42 PKT" name="startup" finished-at="2023-06-01T19:54:58 PKT" duration-ms="15322" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[firefox]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- startup -->
-        <test-method signature="verifyURLBeforeAndAfterLogin()[pri:15, instance:testcases.Logintest@26794848]" started-at="2023-06-01T19:54:58 PKT" name="verifyURLBeforeAndAfterLogin" finished-at="2023-06-01T19:55:01 PKT" duration-ms="3131" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyURLBeforeAndAfterLogin -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.Logintest@26794848]" started-at="2023-06-01T19:55:01 PKT" name="tearDown" finished-at="2023-06-01T19:55:05 PKT" duration-ms="4299" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="startup(java.lang.String)[pri:0, instance:testcases.Logintest@26794848]" started-at="2023-06-01T19:55:05 PKT" name="startup" finished-at="2023-06-01T19:55:20 PKT" duration-ms="14738" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[firefox]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- startup -->
-        <test-method signature="verifyLoginWithValidCredentialsMultipleTimes(java.lang.String,java.lang.String)[pri:16, instance:testcases.Logintest@26794848]" started-at="2023-06-01T19:55:20 PKT" name="verifyLoginWithValidCredentialsMultipleTimes" data-provider="validEmails" finished-at="2023-06-01T19:55:29 PKT" duration-ms="8780" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[basitbhutto333@gmail.com]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Basit@12345]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyLoginWithValidCredentialsMultipleTimes -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.Logintest@26794848]" started-at="2023-06-01T19:55:29 PKT" name="tearDown" finished-at="2023-06-01T19:55:34 PKT" duration-ms="5152" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="startup(java.lang.String)[pri:0, instance:testcases.Logintest@26794848]" started-at="2023-06-01T19:55:34 PKT" name="startup" finished-at="2023-06-01T19:55:53 PKT" duration-ms="19405" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[firefox]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- startup -->
-        <test-method signature="verifyLoginWithValidCredentialsMultipleTimes(java.lang.String,java.lang.String)[pri:16, instance:testcases.Logintest@26794848]" started-at="2023-06-01T19:55:53 PKT" name="verifyLoginWithValidCredentialsMultipleTimes" data-provider="validEmails" finished-at="2023-06-01T19:56:02 PKT" duration-ms="9266" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[usmanamin735@gmail.com]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Usman@12345]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyLoginWithValidCredentialsMultipleTimes -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.Logintest@26794848]" started-at="2023-06-01T19:56:02 PKT" name="tearDown" finished-at="2023-06-01T19:56:14 PKT" duration-ms="11422" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="startup(java.lang.String)[pri:0, instance:testcases.Logintest@26794848]" started-at="2023-06-01T19:56:14 PKT" name="startup" finished-at="2023-06-01T19:56:48 PKT" duration-ms="33978" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[firefox]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- startup -->
-        <test-method signature="verifyLoginWithValidCredentialsMultipleTimes(java.lang.String,java.lang.String)[pri:16, instance:testcases.Logintest@26794848]" started-at="2023-06-01T19:56:48 PKT" name="verifyLoginWithValidCredentialsMultipleTimes" data-provider="validEmails" finished-at="2023-06-01T19:57:00 PKT" duration-ms="12093" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[usmanamin735@gmail.com]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Usman@12345]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyLoginWithValidCredentialsMultipleTimes -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.Logintest@26794848]" started-at="2023-06-01T19:57:00 PKT" name="tearDown" finished-at="2023-06-01T19:57:06 PKT" duration-ms="5937" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="startup(java.lang.String)[pri:0, instance:testcases.Logintest@26794848]" started-at="2023-06-01T19:57:06 PKT" name="startup" finished-at="2023-06-01T19:57:21 PKT" duration-ms="14789" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[firefox]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- startup -->
-        <test-method signature="verifyLoginWithValidCredentialsMultipleTimes(java.lang.String,java.lang.String)[pri:16, instance:testcases.Logintest@26794848]" started-at="2023-06-01T19:57:21 PKT" name="verifyLoginWithValidCredentialsMultipleTimes" data-provider="validEmails" finished-at="2023-06-01T19:57:30 PKT" duration-ms="8881" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[basitbhutto333@gmail.com]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Basit@12345]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyLoginWithValidCredentialsMultipleTimes -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.Logintest@26794848]" started-at="2023-06-01T19:57:30 PKT" name="tearDown" finished-at="2023-06-01T19:57:38 PKT" duration-ms="8073" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="startup(java.lang.String)[pri:0, instance:testcases.Logintest@26794848]" started-at="2023-06-01T19:57:38 PKT" name="startup" finished-at="2023-06-01T19:57:52 PKT" duration-ms="14651" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[firefox]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- startup -->
-        <test-method signature="verifyLoginWithValidCredentialsMultipleTimes(java.lang.String,java.lang.String)[pri:16, instance:testcases.Logintest@26794848]" started-at="2023-06-01T19:57:52 PKT" name="verifyLoginWithValidCredentialsMultipleTimes" data-provider="validEmails" finished-at="2023-06-01T19:58:04 PKT" duration-ms="11559" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[basitbhutto333@gmail.com]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Basit@12345]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyLoginWithValidCredentialsMultipleTimes -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.Logintest@26794848]" started-at="2023-06-01T19:58:04 PKT" name="tearDown" finished-at="2023-06-01T19:58:10 PKT" duration-ms="6239" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="startup(java.lang.String)[pri:0, instance:testcases.Logintest@26794848]" started-at="2023-06-01T19:58:10 PKT" name="startup" finished-at="2023-06-01T19:58:22 PKT" duration-ms="12263" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[firefox]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- startup -->
-        <test-method signature="verifyLoginWithValidCredentialsMultipleTimes(java.lang.String,java.lang.String)[pri:16, instance:testcases.Logintest@26794848]" started-at="2023-06-01T19:58:22 PKT" name="verifyLoginWithValidCredentialsMultipleTimes" data-provider="validEmails" finished-at="2023-06-01T19:58:31 PKT" duration-ms="8759" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[basitbhutto333@gmail.com]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Basit@12345]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyLoginWithValidCredentialsMultipleTimes -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.Logintest@26794848]" started-at="2023-06-01T19:58:31 PKT" name="tearDown" finished-at="2023-06-01T19:58:35 PKT" duration-ms="3764" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="startup(java.lang.String)[pri:0, instance:testcases.Logintest@26794848]" started-at="2023-06-01T19:58:35 PKT" name="startup" finished-at="2023-06-01T19:58:47 PKT" duration-ms="12399" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[firefox]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- startup -->
-        <test-method signature="loginWithValidCredentialsAndBackwardAndForward()[pri:17, instance:testcases.Logintest@26794848]" started-at="2023-06-01T19:58:47 PKT" name="loginWithValidCredentialsAndBackwardAndForward" finished-at="2023-06-01T19:58:53 PKT" duration-ms="5603" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginWithValidCredentialsAndBackwardAndForward -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.Logintest@26794848]" started-at="2023-06-01T19:58:53 PKT" name="tearDown" finished-at="2023-06-01T19:58:58 PKT" duration-ms="5011" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- testcases.Logintest -->
-    </test> <!-- FireFox Test -->
-  </suite> <!-- Suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
