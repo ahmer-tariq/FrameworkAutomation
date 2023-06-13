@@ -21,6 +21,7 @@ public class Logintest extends Base {
 	AccountPage account;
 	
 	// line updated
+	//new
 
 	@BeforeMethod
 	@Parameters("Browser")
